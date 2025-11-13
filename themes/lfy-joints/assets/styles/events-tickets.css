@@ -1,0 +1,175 @@
+.tribe-common .tribe-common-h7,
+.tribe-common .tribe-common-h8 {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.tribe-common .tribe-common-h3,
+.tribe-common .tribe-common-h4 {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.tribe-common .tribe-common-h4--min-medium {
+    font-size: 1rem;
+}
+
+.tribe-common .tribe-tickets__item__quantity {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.tribe-common .tribe-tickets__item__quantity__number {
+    width: auto;
+}
+
+.entry .entry-content .tribe-common .tribe-tickets__item__quantity__add,
+.entry .entry-content .tribe-common .tribe-tickets__item__quantity__remove,
+.tribe-common .tribe-tickets__item__quantity__add,
+.tribe-common .tribe-tickets__item__quantity__remove {
+    font-size: 18px;
+    width: 20px;
+    color: #7bc460;
+    font-weight: bold;
+}
+
+.tribe-common .tribe-common-h1--min-medium {
+    color: #b9b9ba !important;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: normal;
+}
+
+.tribe-common .tribe-common-form-control-text__input {
+    border: 1px solid #908f8f !important;
+    padding: .5rem !important;
+}
+
+.tribe-common .tribe-common-h4 {
+    color: #4b4c52 !important;
+    font-weight: normal !important;
+    font-family: Playfair Display, serif !important;
+}
+
+.tribe-common .tribe-common-h2,
+.tribe-common .tribe-common-h5,
+.tribe-common .tribe-common-h6,
+.tribe-common .tribe-common-h7,
+.tribe-common .tribe-common-b1,
+.tribe-common .tribe-common-b2,
+.tribe-common .tribe-common-b3 {
+    color: #908f8f !important;
+    font-family: Roboto, Arial, sans-serif !important;
+}
+
+body.page-tribe-attendee-registration .tribe-common .tribe-tickets__mini-cart .tribe-ticket-quantity,
+body.page-tribe-attendee-registration .tribe-common .tribe-tickets__mini-cart .tribe-tickets__item__total,
+body.page-tribe-attendee-registration .tribe-common .tribe-tickets__mini-cart .tribe-tickets__item__extra__price {
+    font-family: Roboto, Arial, sans-serif !important;
+}
+
+.tribe-common a:hover,
+.tribe-common a:focus,
+.tribe-common a:active,
+.tribe-common a:visited {
+    color: #a39494;
+}
+
+.tribe-common .tribe-common-c-btn,
+.tribe-common a.tribe-common-c-btn {
+    color: #fff;
+    background: #7bc460 !important;
+}
+
+.tribe-common .tribe-common-c-btn:hover,
+.tribe-common a.tribe-common-c-btn:hover {
+    background: #68b24d !important;
+}
+
+#buy-tickets h2.tribe-events-tickets-title {
+    margin-top: 0;
+}
+
+.tribe-events-tickets,
+.tribe-events-tickets tbody,
+.tribe-events-tickets tbody tr,
+.tribe-events-tickets td.add-to-cart {
+    background: transparent;
+}
+
+.tribe-events-tickets tbody tr {
+    background: transparent !important;
+}
+
+.tribe-events-tickets td.tickets_name em {
+    font-weight: normal;
+    font-size: .8rem;
+}
+
+.tribe-events-tickets .tickets_price {
+    font-style: normal;
+}
+
+.tribe-events-tickets tbody tr.tribe-tickets-form-row {
+    background: #FFF !important;
+}
+
+.tribe-events-tickets tbody,
+.tribe-events-tickets td.add-to-cart {
+    border: 0;
+}
+
+.tribe-events-tickets .tribe-tickets-remaining {
+    display: none;
+}
+
+.tribe-events-tickets .woocommerce.add-to-cart {
+    padding: 0;
+}
+
+.tribe-events-tickets td.add-to-cart .tribe-button,
+.tribe-common .tribe-common-c-btn {
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .75rem 2rem;
+    border-radius: 4px;
+    letter-spacing: .35rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    background: #7bc460;
+    font-size: 1.2rem;
+}
+
+.tribe-common .tribe-common-c-btn:hover,
+.tribe-common .tribe-common-c-btn:active {
+    background: #7bc460;
+}
+
+.tribe-events-tickets .woocommerce.add-to-cart .tribe-button {
+    margin: 1.5rem 0;
+}
+
+.tribe-block__tickets__registration__event button,
+.tribe-block__tickets__registration__checkout__submit {
+    background: #f47873;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .75rem 2rem;
+    border-radius: 4px;
+    letter-spacing: .35rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    background: #7bc460;
+    font-size: 1.4rem;
+}
+
+.tribe-orders-list li:before {
+    content: '';
+    display: none;
+}
+
+.tribe-link-view-attendee {
+    padding: .5rem;
+    border: 1px solid red;
+}

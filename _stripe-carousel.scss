@@ -1,0 +1,117 @@
+.bar .slick-carousel {
+	margin: 0 40px;
+	position: relative;
+	@include breakpoint(1100px) {
+		margin: 0;
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		display: block;
+		cursor: pointer;
+		right: -25px;
+		@include breakpoint(1100px) {
+			right: -80px;
+		}
+		svg {
+			width: 40px;
+			height: 40px;
+			fill: $lfy-green;
+			@include breakpoint(1100px) {
+				width: 60px;
+				height: 60px;
+			}
+		}
+		.icon {
+			width: 40px;
+			height: 40px;
+			@include breakpoint(1100px) {
+				width: 60px;
+				height: 60px;
+			}
+		}
+	}
+	.slick-arrow.cycle-prev {
+		left: -40px;
+		right: auto;
+		@include breakpoint(1100px) {
+			left: -80px;
+		}
+		span {
+			-moz-transform: scaleX(-1);
+			-o-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+			filter: FlipH;
+			-ms-filter: "FlipH";
+		}
+	}
+	.slick-disabled {
+		opacity: .25;
+		cursor: default;
+	}
+	.slide {
+		display: none;
+		float: left;
+		height: 100%;
+		min-height: 1px;
+	}
+	.slick-list {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.bar .slick-carousel.slick-initialized .slide {
+    display: block;
+}
+
+.bar.products {
+	.row {
+		max-width: 1100px;
+	}
+}
+
+.bar .products-carousel {
+	.slick-arrow {
+		top: 60%;
+	}
+	.slide .inner {
+		padding: .75rem;
+		img {
+			box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+		}
+	}
+	.slide {
+	  display: block;
+	  width: 400px;
+	}
+}
+
+.bar.articles-carousel {
+	.slide {
+		padding-right: .9375rem;
+		padding-left: .9375rem;
+		.inner {
+			background: #fff;
+			.text {
+				position: relative;
+				background: #fff;
+				padding: 2rem;
+			}
+		}
+		h3 {
+			text-transform: uppercase;
+			color: #908f8f;
+			font-weight: 700;
+			font-size: 1rem;
+			margin: 0 0 1rem;
+			a {
+					color: #908f8f;
+			}
+		}
+	}
+}

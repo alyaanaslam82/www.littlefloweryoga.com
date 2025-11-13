@@ -1,0 +1,885 @@
+/************************************************
+
+Stylesheet: Global Stylesheet
+
+*************************************************/
+
+body.single-tribe_events {
+	background: #f7f7f7;
+}
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+.page-title {
+	
+	// Remove Foundation vcard styling from author page titles
+	.vcard {
+		border: 0px;
+		padding: 0px;
+	}
+}
+
+// Post meta  
+.byline {
+	color: #999;
+	time {}
+}
+
+
+span.tooltip {
+	color: $lfy-teal;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+h1, 
+h2 {
+	font-family: 'Playfair Display', serif;
+}
+
+h2 {
+	font-size: 3rem;
+	color: $dark-gray;
+	line-height: 1.1;
+	margin: 0;
+}
+
+h4 {
+	color: $light-gray;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+}
+
+p,
+h2,
+h3,
+h4,
+h5, 
+a {
+	&.pink {
+		color: $lfy-pink;
+	}
+	&.teal {
+		color: $lfy-teal;
+	}
+	&.green {
+		color: $lfy-green;
+	}
+	&.orange {
+		color: $lfy-orange;
+	}
+}
+
+p.uppercase {
+	color: $light-gray;
+	font-size: .85rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+}
+
+
+#tribe-events-content .button,
+.woocommerce .button,
+.button {
+	background: $lfy-pink;
+	color: $white;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: .75rem 2rem;
+	border-radius: 4px;
+	letter-spacing: .35rem;
+	font-weight: 700;
+	margin: 1.5rem 0;
+	@include breakpoint(small only) {
+		line-height: 1.2;
+	}
+	&.outline {
+		border: 1px solid $lfy-green;
+		background: transparent;
+		color: $lfy-green;
+		&.teal {
+			border: 1px solid $lfy-teal;
+			color: $lfy-teal;
+			background: transparent;
+		}
+		&.green {
+			border: 1px solid $lfy-green;
+			color: $lfy-green;
+			background: transparent;
+		}
+		&.pink {
+			border: 1px solid $lfy-pink;
+			color: $lfy-pink;
+			background: transparent;
+		}
+		&.orange {
+			border: 1px solid $lfy-orange;
+			color: $lfy-orange;
+			background: transparent;
+		}
+	}
+	&.pink,
+	&.outline.active.pink {
+		background: $lfy-pink;
+		color: $white;
+	}
+	&.green,
+	&.outline.active.green {
+		background: $lfy-green;
+		color: $white;
+	}
+	&.orange,
+	&.outline.active.orange {
+		background: $lfy-orange;
+		color: $white;
+	}
+	&.teal,
+	&.outline.active.teal {
+		background: $lfy-teal;
+		color: $white;
+	}
+	&.arrow {
+		display: block;
+		border-radius: 0;
+		width: 100%;
+		position: relative;
+		padding: 1rem;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			height: 100%;
+			width: 10%;
+			border-left: 1px solid $lfy-teal;
+		}
+	}
+}
+
+img.aligncenter { 
+	margin-right: auto; 
+	margin-left: auto; 
+	display: block; 
+	clear: both; 
+}	
+
+// Entry content  
+.entry-content {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	@include breakpoint(medium) {
+		.alignleft, img.alignleft { 
+			margin-right: 1.5em; 
+			display: inline; 
+			float: left; 
+		}
+		.alignright, img.alignright { 
+			margin-left: 1.5em; 
+			display: inline; 
+			float: right; 
+		}
+	}
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto; 
+		display: block; 
+		clear: both; 
+	}			
+	video, object {
+		max-width: 100%;
+		height: auto;
+		}
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+	}
+}
+
+.row {
+	max-width: 1200px;
+}
+
+.slick-track:before, 
+.slick-track:after {
+    display: table;
+    content: '';
+}
+.slick-track:after {
+    clear: both;
+}
+
+.stripe,
+.bar,
+.content {
+	ul {
+		list-style: none;
+		li {
+			margin-bottom: .5rem;
+			position: relative;
+			&:before {
+				content: "\2022";
+				color: $lfy-green;
+				font-size: 22px;
+				line-height: 1;
+				font-weight: bold;
+				display: inline-block;
+				width: 16px;
+				margin-left: -16px;
+				vertical-align: middle;
+			}
+		}
+	}
+	.um-account-side ul,
+	.um-profile ul,
+	ul.no-style {
+		li::before {
+			content: '';
+			display: none;
+		}
+	}
+
+	ul.checkmark {
+		list-style-type: none;
+		margin-top: 1rem;
+		&.two-col li {
+			padding: 0 0 0 40px;
+			margin-bottom: 2rem;
+		}
+		li { 
+			margin: 0;
+			padding: 0 0 2rem 40px;
+			background: url(../images/icon-checkmark-green.svg) no-repeat 3px 2px;
+			background-size: 20px auto;
+			&:before {
+				content: '';
+				display: none;
+			}
+		}
+		&.teal li {
+			background-image: url(../images/icon-checkmark-teal.svg);
+		}
+		&.pink li {
+			background-image: url(../images/icon-checkmark-pink.svg);
+		}
+	}
+	ul.no-bullet {
+		list-style: none;
+		margin: 0;
+		li:before {
+			content: '';
+		}
+	}
+
+}
+
+ul.two-col,
+ul.two-column {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	padding-left: 0;
+	margin-left: 0;
+	li {
+		padding-left: 1rem;
+		-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+		page-break-inside: avoid; /* Firefox */
+			 break-inside: avoid; /* IE 10+ */
+	}
+}
+
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	fill: $black;
+	svg {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+.vimeo-embed-link {
+	position: relative;
+	display: block;
+	span.icon {
+		position: absolute;
+		top: 1rem;
+		right: 1.5rem;
+		display: block;
+		width: 50px;
+		height: 50px;
+		z-index: 2;
+		svg {
+			fill: #FFF;
+			display: block;
+			width: 60px;
+			height: 60px;
+		}
+	}
+	h4 {
+		text-align: left;
+		padding: .45rem 0;
+		font-size: 1.1rem;
+		color: $dark-gray;
+		a {
+			color:  $dark-gray;
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.reveal {
+	padding: 0;
+	overflow: visible;
+	.close-button {
+		background: $lfy-green;
+		color: $white;
+		border-radius: 50%;
+		left: -20px;
+		top: -20px;
+		width: 32px;
+		height: 32px;
+		@include breakpoint(small only) {
+			left: 0;
+			top: 0;
+		}
+	}
+	.flex-video {
+		margin: 0;
+	}
+	iframe {
+		width: 100%;
+	}
+}
+
+.subject-icon {
+	display: block;
+	float: left;
+	width: 64px;
+	height: 64px;
+	fill: $black;
+	margin-right: 10px;
+	&.orange {
+		fill: $lfy-orange;
+	}
+	&.green {
+		fill: $lfy-green;
+	}
+	&.pink {
+		fill: $lfy-pink;
+	}
+	&.teal {
+		fill: $lfy-teal;
+	}
+	svg {
+		width: 100%;
+		height: auto;
+	}
+}
+
+img.alignright {
+	float: right;
+	margin: 0 0 1rem 1rem;
+}
+img.alignleft {
+	float: left;
+	margin: 0 1rem 1rem 0;
+	&.right-border {
+		padding-right: 2.5rem;
+		margin-right: 2.5rem;
+		border-right: 1px solid $light-gray;
+	}
+}
+
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
+
+	// Images inside wp-caption  
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
+} 
+
+// Add Foundation styling to password protect button
+.post-password-form input[type="submit"] {
+	@include button;
+}
+ul.tabs {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: 0 auto;
+	list-style: none;
+	@media all and (max-width: 880px) {
+		flex-wrap: wrap;
+	}
+	li {
+		background: none;
+		padding: 0;
+		list-style: none;
+		flex-grow: 1;
+		text-align: center;
+		margin-bottom: .5rem;
+		&:before {
+			content: '';
+			display: none;
+		}
+		@media all and (max-width: 880px) {
+			flex-basis: 25%;
+		}
+	}
+}
+.tabs-title {
+	float: none !important;
+	display: inline-block;
+	&>a {
+		border: 1px solid #26b6a1;
+		border-radius: 4px;
+		text-transform: uppercase;
+		color: $lfy-teal;
+		padding: .5rem;
+		margin-right: .5rem;
+		@include breakpoint(small only) {
+			min-height: 46px;
+		}
+		@include breakpoint(medium) {
+			padding: .5rem 1rem;
+		}
+		@include breakpoint(large) {
+			padding: .5rem 1.75rem;
+		}
+		&:hover {
+			background: #26b6a1;
+			color: $white;
+		}
+	}
+	&.is-active>a {
+		color: $white;
+	}
+}
+.single-course .tabs-title>a {
+	height: 100%;
+}
+.tabs-panel {
+	padding: 3rem 0;
+}
+.tabs-content {
+	max-width: 1000px;
+	margin: 0 auto;
+	h3 {
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+	a.vimeo-embed-link {
+		@include breakpoint(medium) {
+			float: right;
+			width: 50%;
+			padding-left: 3rem;
+			margin-left: 2rem;
+			border-left: 1px solid $lightest-gray;
+		}
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(
+				to bottom,
+				rgba( 0, 0, 0, .6),
+				rgba( 0, 0, 0, 0)
+			);
+			@include breakpoint(medium) {
+				left: 3rem;
+			}
+		}
+	}
+}
+
+/*********************
+IMAGE GALLERY STYLES
+*********************/
+.gallery {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-right: -15px;
+	margin-left: -15px; 
+}
+.gallery::before, .gallery::after {
+	content: ' ';
+	display: table; 
+}
+.gallery::after {
+	clear: both; 
+}
+.gallery.gallery-columns-1 > dl {
+	@include grid-column;
+}
+.gallery.gallery-columns-2 > dl {
+	@include grid-column(1 of 2);
+}
+.gallery.gallery-columns-3 > dl {
+	@include grid-column(1 of 3);
+}
+.gallery.gallery-columns-4 > dl {
+	@include grid-column(1 of 4);
+}
+.gallery.gallery-columns-5 > dl {
+	@include grid-column(1 of 5);
+}
+.gallery.gallery-columns-6 > dl {
+	@include grid-column(1 of 6);
+}
+.gallery.gallery-columns-7 > dl {
+	@include grid-column(1 of 7);
+}
+.gallery.gallery-columns-8 > dl {
+	@include grid-column(1 of 8);
+}
+.gallery dl {
+	width: 100%;
+	float: left;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem; 
+}
+.gallery dl:last-child:not(:first-child) {
+	float: right; 
+ }
+
+// Gallery caption styles
+.gallery-caption {}
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
+
+/*********************
+PAGE NAVI STYLES
+*********************/
+.page-navigation {
+	margin-top: 1rem;
+}
+
+/*********************
+COMMENT STYLES
+*********************/
+#comments {
+	.commentlist {
+		margin-left: 0px;
+	}
+}
+
+#respond {
+	ul {
+		margin-left: 0px;
+	}
+}
+
+.commentlist {
+	li {
+		position: relative;
+		clear: both;
+		overflow: hidden;
+		list-style-type: none;
+		margin-bottom: 1.5em;
+		padding: 0.7335em 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		ul.children {
+			margin: 0;
+
+			li {}
+
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           // Change number for different depth  
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+		}
+	}
+
+	li[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	li.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	li:not(.depth-1) {
+		margin-left: 10px;
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	li.depth-2 {}
+	li.depth-3 {
+	}
+	li.depth-4 {}
+	li.depth-5 {}
+
+	// General comment classes  
+	.alt {}
+	.odd {
+	}
+	.even {
+	}
+	.parent {}
+	.comment {}
+	.children {}
+	.pingback {}
+	.bypostauthor {}
+	.comment-author {}
+	.comment-author-admin {}
+	.thread-alt {}
+	.thread-odd {}
+	.thread-even {}
+
+	// vcard  
+	.vcard {
+		margin-left: 50px;
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			float: right;
+
+			a {
+				color: #999;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		img.photo {}
+
+		img.avatar {
+			position: absolute;
+			left: 10px;
+			padding: 2px;
+			border: 1px solid #cecece;
+			background: #fff;
+		}
+
+	} // end .commentlist .vcard  
+
+
+	// comment meta  
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+
+		a {}
+
+	}
+
+	// comment content  
+	.comment_content {
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} // end .commentlist .comment_content  
+
+	// comment reply link  
+	.comment-reply-link {
+		float: right;
+
+		&:hover,
+		&:focus {
+		
+		}
+
+	} // end .commentlist .comment-reply-link  
+
+} // end .commentlist  
+
+/*********************
+COMMENT FORM STYLES
+*********************/
+.respond-form {
+	margin: 1.5em 10px;
+	padding-bottom: 2.2em;
+
+	form {
+		margin: 0.75em 0;
+
+		li {
+			list-style-type: none;
+			clear: both;
+			margin-bottom: 0.7335em;
+
+			label,
+			small {
+				display: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url],
+		textarea {
+			padding: 3px 6px;
+			background: #efefef;
+			border: 2px solid #cecece;
+			line-height: 1.5em;
+
+			&:focus {
+				background: #fff;
+			}
+
+			// form validation  
+			&:invalid {
+				outline: none;
+				border-color: #fbc2c4;
+				background-color: #f6e7eb;
+				-webkit-box-shadow: none;
+					 -moz-box-shadow: none;
+						-ms-box-shadow: none;
+						box-shadow: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url] {
+			max-width: 400px;
+			min-width: 250px;
+		}
+
+		textarea {
+			resize: none;
+			width: 97.3%;
+			height: 150px;
+		}
+
+	}
+}
+
+// comment form title  
+#comment-form-title {
+	margin: 0 0 1.1em;
+}
+
+// cancel comment reply link  
+#cancel-comment-reply {
+	a {}
+}
+
+// logged in comments  
+.comments-logged-in-as {}
+
+// allowed tags  
+#allowed_tags {
+	margin: 1.5em 10px 0.7335em 0;
+}
+
+// No comments  
+.nocomments {
+	margin: 0 20px 1.1em;
+}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {
+	li{
+		list-style: none;
+	}
+}
+
+.widget {
+	ul {
+		margin: 0;
+	}
+}
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+	clear: both;
+	margin-top: 1em;
+}
+	
+/*********************
+VISUAL EDITOR STYLES
+*********************/
+// Makes content look better in visual editor
+body#tinymce {
+	 	margin: 20px;
+}
+
+/*********************
+PLUGIN STYLES
+*********************/
+// Makes Gravity Forms play nice with Foundation Form styles
+.gform_body ul {
+		list-style: none outside none;
+		margin: 0;
+}
+
+.search-form {
+	max-width: 800px;
+	margin-bottom: 2rem;
+	@include clearfix;
+	label {
+		width: 50%;
+		float: left;
+		margin-right: 10px;
+	}
+	.button {
+		margin: 0;
+	}
+}
+
+.swnza_banner a {
+	color: #FFF;
+}

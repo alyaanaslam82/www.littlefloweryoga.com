@@ -1,0 +1,274 @@
+/* Training */
+.page-id-32 {
+	.bar .row {
+		max-width: 1100px;
+	}
+	.header-photo .text-overlay {
+		top: 38%;
+		.text {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	}
+
+	#div-building-resilience {
+		.text-side {
+			padding-top: 4rem;
+		}
+	}
+
+	#div-why-yoga-mindfulness {
+		h2 {
+			background-image: url(../images/line-teal.svg);
+		}
+		img {
+			margin-right: 10rem;
+		}
+	}
+
+	// #div-testimonial-1 {
+	// 	padding-bottom: 0;
+	// 	.just-text {
+	// 		padding-top: 1.5rem;
+	// 	}
+	// 	.white-bg {
+	// 		top: -120px;
+	// 		position: relative;
+	// 		width: 94%;
+	// 	}
+	// }
+
+	#div-become-teacher {
+		h2 {
+			background-image: url(../images/line-orange.svg);
+		}
+	}
+
+	#div-testimonial-2 {
+		.quote {
+			max-width: 700px;
+		}
+	}
+
+	#div-training-takeaways {
+		hr {
+			margin: 3rem auto;
+		}
+		p {
+			margin-bottom: 3rem;
+		}
+		p.callout {
+			color: #67c6b6; 
+			font-family: Handlee; 
+			font-size: 1.3rem;
+			text-align: center;
+			line-height: 1.4;
+			border: 0;
+			margin-bottom: 1rem;
+		}
+	}
+
+	#div-where-to-begin {
+		h5 {
+			padding-bottom: 1.75rem;
+			background: url(../images/line-teal.svg) no-repeat 0 100%;
+			background-size: 130px auto;
+			font-weight: 500;
+			color: $dark-gray;
+		}
+		img {
+			padding-left: 2rem;
+			border-left: 1px solid $light-gray;
+			margin-left: 2rem;
+		}
+	}
+
+	#div-certification-track {
+		h2 {
+			font-family: Roboto,Arial,sans-serif;
+			font-size: 1.4rem;
+			font-weight: 500;
+			padding-bottom: 1.75rem;
+			background: url(../images/line-orange.svg) no-repeat 50% 100%;
+			background-size: 130px auto;
+		}
+	}
+
+	.tabs {
+		h3 {
+			font-size: 1.2rem;
+			font-weight: bold;
+			padding-bottom: 1.75rem;
+			background: url(../images/line-pink.svg) no-repeat 0 100%;
+			background-size: 130px auto;
+		}
+	}
+
+	#div-why-train {
+		h2 {
+			background-image: url(../images/line-teal.svg);
+		}
+		.checkmark {
+			margin-bottom: 3rem;
+		}
+	}
+
+	#div-testimonial-5 {
+		padding-bottom: 0;
+		.white-bg {
+			top: -120px;
+			position: relative;
+		}
+		p.quote {
+			font-family: 'Playfair Display', serif;
+		}
+		p.source {
+			padding-top: 2rem;
+			margin-bottom: 0;
+			font-weight: 600;
+		}
+		p.source-title {
+			text-transform: uppercase;
+			font-size: .9rem;
+		}
+	}
+
+	#div-join-community {
+		overflow: visible;
+		border-top: 0;
+		padding-top: 0;
+		.bg-image {
+			position: absolute;
+			display: block;
+			top: -20px;
+			right: -155px;
+			width: 30%;
+			height: 130%;
+			background: url(../images/bg-join-community.png) no-repeat 100% 50%;
+			background-size: contain;
+			z-index: 1;
+		}
+		h2 {
+			background-image: url(../images/line-orange.svg);
+		}
+	}
+
+	#div-join-fb-group {
+		padding: 0 0 4rem;
+		border-top: 0;
+		h2 {
+			display: block;
+			width: 70px;
+			height: 70px;
+			background-image: url(../images/icon-heart.svg);
+			background-size: auto;
+		}
+		h3 {
+			font-family: 'Playfair Display', serif;
+			margin: 0 auto 2rem;
+		}
+		p {
+			max-width: 750px;
+			margin: 0 auto;
+		}
+	}
+
+	#div-student-success {
+		h2 {
+			background-image: url(../images/line-pink.svg);
+		}
+		h3 {
+			font-family: 'Playfair Display', serif;
+			font-size: 1.3rem;
+			background: transparent;
+			padding-bottom: 0;
+			margin: 0 0 0.5rem;
+		}
+	}
+
+	#div-scholarships {
+		padding-top: 2rem;
+		.grid-wrapper {
+			box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+		}
+		.subject-icon {
+			float: right;
+		}
+		.medium-up-2 .column-block .inner {
+			position: relative;
+			padding-bottom: 60px;
+		}
+		.button {
+			position: absolute; 
+			bottom: 0;
+			margin: 0;
+		}
+	}
+
+	.faq {
+		position: relative;
+		.bg-image {
+			position: absolute;
+			display: block;
+			top: 10%;
+			right: -0;
+			width: 30%;
+			height: 610px;
+			background: url(../images/bg-training-faq.png) no-repeat 100% 50%;
+			background-size: contain;
+		}
+	}
+
+}
+
+.page-template-page-levels .event-wrap {
+	border: 2px solid #FFF;
+	opacity: .75;
+}
+
+.page-id-539 .tribe_events_cat-level-one .event-wrap {
+	border: 2px solid $lfy-teal;
+	opacity: 1;
+}
+
+.page-id-541 .tribe_events_cat-level-two .event-wrap {
+	border: 2px solid $lfy-teal;
+	opacity: 1;
+}
+
+.page-id-543 .tribe_events_cat-level-three .event-wrap {
+	border: 2px solid $lfy-teal;
+	opacity: 1;
+}
+
+/* Training */
+.page-id-32,
+.page-id-34 {
+	#div-tuition {
+		padding-bottom: 0;
+		.grid-wrapper {
+			box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+		}
+		.subject-icon {
+			float: right;
+		}
+		h2 {
+			background-image: url(../images/line-teal.svg);
+		}
+		.grid-wrapper h2 {
+			background: transparent;
+			max-width: 100%;
+		}
+		h3 {
+			font-weight: bold;
+			font-size: 1rem;
+		}
+		.button {
+			margin: .75rem 0;
+		}
+		ol li,
+		ul li {
+			font-size: .9rem;
+		}
+	}
+}

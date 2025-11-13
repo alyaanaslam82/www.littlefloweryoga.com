@@ -1,0 +1,207 @@
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt {
+	@include button;
+	background: $lfy-green;
+	border-radius: 4px;
+	padding: .618em 1em;
+	font-size: 1rem;
+	&:hover {
+		background: #68b24d;
+	}
+}
+
+
+.woocommerce {
+	.product-specific-text {
+		margin: 2rem 0;
+		box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+		padding: 1rem;
+	}
+	.limited-subscription-notice {
+		border: 1px solid red;
+		padding: .5rem;
+	}
+	ul.order_details {
+		border: 1px solid $lfy-teal;
+		padding: 1rem;
+		li {
+			margin-bottom: 0;
+		}
+	}
+	input[readonly] {
+		background: transparent;
+	}
+}
+
+.woocommerce-checkout .content li:before {
+	content: '';
+	display: none;
+}
+
+.single-product {
+	.article-header {
+		margin-bottom: 2rem;
+	}
+	h4.product-category a {
+		color: $lfy-teal;
+	}
+	.endorsements {
+		.medium-10 {
+			position: relative;
+		}
+		.slide {
+			width: 100%;
+		}
+		.cycle-prev span.icon,
+		.cycle-next span.icon {
+			width: 60px;
+			height: 60px;
+			cursor: pointer;
+			svg {
+				fill: $lfy-green;
+			}
+		}
+		.cycle-prev,
+		.cycle-next {
+			position: absolute;
+			top: 50%;
+			left: -100px;
+			right: auto;
+		}
+		.cycle-next {
+			left: auto;
+			right: -100px;
+		}
+		.cycle-prev {
+			svg {
+				-moz-transform: scaleX(-1);
+				-o-transform: scaleX(-1);
+				-webkit-transform: scaleX(-1);
+				transform: scaleX(-1);
+				filter: FlipH;
+				-ms-filter: "FlipH";
+			}
+		}
+	}
+	#product-trainer h4 {
+		margin-bottom: 1rem;
+	}
+}
+
+.woocommerce .content {
+	ul li:before {
+		content: '';
+	}
+}
+
+.woocommerce {
+	ul.products li.product {
+		.woocommerce-loop-product__link {
+			box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1); 
+		}
+		h2 {
+			font-family: Roboto,Arial,sans-serif;
+			line-height: 1.6;
+		}
+		img {
+			margin: 0;
+		}
+		a.woocommerce-loop-product__link {
+			display: block;
+		}
+		.woocommerce-loop-product__title {
+			text-transform: uppercase;
+			color: #908f8f;
+			font-weight: 700;
+			font-size: 1rem;
+			margin: 0 0 1rem;
+		}
+		.text {
+			padding: 1rem;
+			p {
+				line-height: 1.8;
+			}
+		}
+		.button {
+			@include button;
+		}
+	}
+	nav.woocommerce-pagination ul {
+		border: 0;
+		li {
+			border: 0;
+		}
+	}
+	.content ul {
+		list-style: disc;
+		li:before {
+			content: '';
+			display: none;
+		}
+	}
+}
+
+.woocommerce div.product form.cart table.variations td.label {
+	background: transparent;
+	color: $lfy-teal;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+.woocommerce div.product form.cart .button {
+	float: none;
+}
+
+.woocommerce #content div.product div.images, 
+.woocommerce div.product div.images, 
+.woocommerce-page #content div.product div.images, 
+.woocommerce-page div.product div.images {
+	width: 33.058%;
+}
+
+.woocommerce #content div.product div.summary, 
+.woocommerce div.product div.summary, 
+.woocommerce-page #content div.product div.summary, 
+.woocommerce-page div.product div.summary {
+	width: 64%;
+}
+
+// mindful mondays premium discount note
+.annual-renewal-discount {
+	display: block;
+	font-size: .8em;
+}
+
+.woocommerce-info {
+	border-color: $lfy-teal;
+	&:before {
+		color: $lfy-teal;
+	}
+
+}
+
+.woocommerce-message {
+	border-color: $lfy-green;
+	&:before {
+		color: $lfy-green;
+	}
+}
+
+.woocommerce.postid-22491,
+.woocommerce.postid-28134 {
+	.woocommerce-product-gallery {
+		display: none;
+	}
+	div.product div.summary {
+		width: 100%;
+	}
+}
+
+.woocommerce.single-product .composite_form.full_width {
+	padding-top: 2rem; 
+	margin-top: 2rem;
+	border-top: 1px solid $dark-gray;
+}

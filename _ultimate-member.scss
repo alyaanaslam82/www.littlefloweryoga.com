@@ -1,0 +1,66 @@
+.um-member-photo img {
+    display: inline !important;
+    border: 0;
+    background: #fff;
+    width: 150px !important;
+    object-fit: cover;
+    height: 150px !important;
+	float: none !important;
+}
+.um-profile-photo a.um-profile-photo-img img {
+    object-fit: cover;
+}
+.um-member-card {
+	min-height: 250px;
+}
+
+a.um-button {
+	text-transform: uppercase !important;
+	padding: .75rem 2rem !important;
+	border-radius: 4px !important;
+	letter-spacing: .35rem !important;
+	font-weight: bold;
+}
+.um input[type=submit].um-button, 
+.um input[type=submit].um-button:focus, 
+.um a.um-button,
+.um a.um-button.um-disabled:hover, 
+.um a.um-button.um-disabled:focus, 
+.um a.um-button.um-disabled:active {
+	background: $lfy-green !important;
+}
+
+.um .um-button.um-alt, 
+.um input[type=submit].um-button.um-alt {
+	background: $medium-gray !important;
+	color: $white;
+}
+
+.um input[type=submit].um-button, 
+.um input[type=submit].um-button:focus {
+	text-transform: uppercase !important;
+	padding: .75rem 2rem !important;
+	border-radius: 4px !important;
+	letter-spacing: .35rem !important;
+}
+
+.um-header {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.um-page-user .entry-title {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.8rem;
+	max-width: 900px;
+	margin: .5rem auto 2rem;
+	padding-bottom: 1.75rem;
+	background: url(../images/line-green.svg) no-repeat 50% 100%;
+	background-size: 130px auto;
+	@include breakpoint(medium) {
+		font-size: 3rem;
+	}
+}
+.um-profile-photo {
+	width: auto;
+}

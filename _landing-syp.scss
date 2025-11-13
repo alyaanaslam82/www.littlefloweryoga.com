@@ -1,0 +1,391 @@
+.page-id-34,
+.the-syp-page {
+	.header-photo {
+		.text-overlay {
+			top: 18%;
+		}
+		.text p {
+			margin: 0 auto 1rem;
+		}
+		.text img {
+			max-width: 340px;
+			padding-bottom: 1.75rem;
+			background: url(../images/line-orange.svg) no-repeat 50% 100%;
+			background-size: 200px auto;
+		}
+	}
+
+	#div-what-we-teach {
+		p {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+	}
+
+	#div-big-photo-1 {
+		.row h2 {
+			background-image: url(../images/line-orange.svg);
+		}
+	}
+
+	#div-we-offer {
+		background: url(../images/bg-we-offer.png) no-repeat 95% 57%;
+		background-size: 280px auto;
+		&.bar.grid .grid-wrapper .row.card .column-block .inner {
+			padding: 0;
+		}
+		.grid-wrapper {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		.row h2 {
+			background-image: url(../images/line-pink.svg);
+		}
+		h4 {
+			padding: 1.5rem 1rem 1rem;
+			color: $black;
+			font-weight: 500;
+		}
+		.subject-icon {
+			margin: 1rem 2rem;
+		}
+		h4, h4 a {
+			color: $lfy-green;
+		}
+		ul {
+			padding: 1.5rem 1.5rem 1.5rem 22%;
+			list-style: none;
+			li {
+				font-size: 1.05rem;
+				line-height: 1.2;
+				margin: 0 0 .5rem;
+				&:before {
+					content: "\2022"; 
+					font-size: 1.4rem;
+					line-height: 1;
+					vertical-align: text-bottom;
+					color: $lfy-green;
+					font-weight: bold;
+					display: inline-block; 
+					width: .75em;
+					margin-left: -.75em;
+				}
+			}
+		}
+		.column-block:nth-child(2) {
+			h4, 
+			h4 a,
+			ul li:before {
+				color: $lfy-orange;
+			}
+		}
+		.column-block:nth-child(3) {
+			h4, 
+			h4 a,
+			ul li:before {
+				color: $lfy-teal;
+			}
+		}
+		.column-block:nth-child(4) {
+			h4, 
+			h4 a,
+			ul li:before {
+				color: $lfy-pink;
+			}
+		}
+	}
+
+	#div-student-programming {
+		.row {
+			max-width: 1100px;
+		}
+		.row h2 {
+			background-image: url(../images/line-orange.svg);
+		}
+		p {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		h3 {
+			font-family: Playfair Display,serif;
+			color: $dark-gray;
+			padding-bottom: 1.75rem;
+			background: url(../images/line-green.svg) no-repeat 0 100%;
+			background-size: 130px auto;
+		}
+		ul {
+			list-style: none;
+			li {
+				line-height: 1.2;
+				margin: 0 0 .5rem;
+				&:before {
+					content: "\2022"; 
+					font-size: 1.4rem;
+					line-height: 1;
+					vertical-align: text-bottom;
+					color: $lfy-green;
+					font-weight: bold;
+					display: inline-block; 
+					width: .75em;
+					margin-left: -.75em;
+				}
+			}
+		}
+	}
+
+	#div-syp-programming {
+		padding-top: 0;
+		padding-bottom: 0;
+		> .row {
+			max-width: 1050px;
+			border-top: 1px solid #ebebeb;
+			border-bottom: 1px solid #ebebeb;
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+		.large-12 > h2 {
+			background-image: url(../images/line-teal.svg);
+		}
+		.intro {
+			max-width: 600px;
+			margin: 0 auto 4rem;
+		}
+		.column-block h2 {
+			font-size: 1.9rem;
+		}
+		@include breakpoint(medium) {
+			.column-block:nth-child(2) {
+				width: 32%;
+			}
+		}
+		@include breakpoint(small only) {
+			.column-block {
+				border: 0;
+			}
+		}
+	}
+
+	#div-scheduling-options {
+		padding-bottom: 6rem;
+		.row {
+			max-width: 1100px;
+		}
+		.row h2 {
+			background-image: url(../images/line-pink.svg);
+		}
+		.column-block {
+			@include breakpoint(small only) {
+				border: 0;
+			}
+			h4 {
+				font-size: 1.8rem;
+				font-weight: normal;
+				margin-bottom: 2rem;
+			}
+			.subject-icon {
+				float: right;
+				position: relative;
+				top: -1rem;
+			}
+			p {
+				clear: both;
+			}
+		}
+	}
+
+	#div-testimonial-1,
+	#div-testimonial-4 {
+		padding-bottom: 0;
+		.white-bg {
+			top: -120px;
+			position: relative;
+		}
+	}
+
+	#div-teacher-development {
+		border-top: 0;
+		.row {
+			max-width: 1000px;
+		}
+	}
+
+	#div-teacher-development {
+		.intro {
+			max-width: 750px;
+			margin-bottom: 2rem;
+		}
+		ul {
+			list-style: none;
+			li {
+				/*
+font-size: 1.05rem;
+				line-height: 1.2;
+*/
+				margin: 0 0 .5rem;
+				&:before {
+					content: "\2022"; 
+					font-size: 1.4rem;
+					line-height: 1;
+					vertical-align: text-bottom;
+					color: $lfy-teal;
+					font-weight: bold;
+					display: inline-block; 
+					width: .75em;
+					margin-left: -.75em;
+				}
+			}
+		}
+		.column-block {
+			h4 {
+				border-bottom: 1px solid $lightest-gray;
+				font-family: 'Playfair Display', serif;
+				text-transform: none;
+				letter-spacing: 0;
+				font-size: 1.5rem;
+				font-weight: normal;
+				padding-bottom: .5rem;
+				clear: both;
+				margin-bottom: 1rem;
+			}
+			h4,
+			svg {
+				color: $lfy-teal;
+				fill: $lfy-teal;
+			}
+			&:nth-child(2) {
+				h4,
+				svg {
+					color: $lfy-pink;
+					fill: $lfy-pink;
+				}
+			}
+			&:nth-child(4) {
+				h4,
+				svg {
+					color: $lfy-orange;
+					fill: $lfy-orange;
+				}
+			}
+		}
+		.column-block:nth-child(2) ul li:before {
+			color: $lfy-pink;
+		}
+		.column-block:nth-child(3) ul li:before {
+			color: $lfy-orange;
+		}
+	}
+
+	.bar.enews-signup .girl {
+		background-image: url(../images/bg-syp-enews.png);
+		top: -80px;
+		width: 220px;
+	}
+
+	#div-family-engagement,
+	#div-staff-wellness {
+		.row {
+			max-width: 1000px;
+		}
+		.row h2 {
+			background-image: url(../images/line-orange.svg);
+		}
+		.text-side {
+			img {
+				margin-left: 4rem;
+			}
+		}
+		ul li {
+			border-bottom: 1px solid #eaeaea;
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+			margin: 0;
+			background-position: left 25px;
+			h4 {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.2rem;
+				text-transform: none;
+				text-align: left;
+				letter-spacing: 0;
+				line-height: 1.2;
+				font-weight: bold;
+				color: $dark-gray;
+				margin-bottom: .25rem;
+			}
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	#div-testimonial-3 {
+		padding-bottom: 0;
+		.white-bg {
+			top: -120px;
+			position: relative;
+		}
+	}
+
+	#div-mental-health {
+		.row {
+			max-width: 1000px;
+		}
+		img {
+			margin-right: 4rem;
+		}
+		ul.checkmark li {
+			padding: 0 0 .5rem 40px;
+		}
+	}
+
+	.bar.products {
+		padding-top: 0;
+		padding-bottom: 0;
+		border: 0;
+	}
+
+	#div-order-button {
+		border-top: 0;
+		h2, h4 {
+			display: none;
+		}
+		a.button {
+			position: relative;
+			border-radius: 0;
+			padding: 1.25rem;
+			width: 92.5%;
+			margin: 0 auto;
+			display: block;
+			&:after {
+				position: absolute;
+				content: '';
+				display: block;
+				background: url(../images/icon-next.svg) no-repeat 50% 50%;
+				background-size: 50% auto;
+				border-left: 1px solid $lfy-teal;
+				width: 8%;
+				top: 0;
+				right: 0;
+				height: 100%;
+			}
+		}
+	}
+
+	#div-get-started {
+		background: url(../images/bg-get-started.png) no-repeat right 50%;
+		background-size: 20% auto;
+		padding: 8rem 0;
+		.row {
+			max-width: 950px;
+			padding: 0 10%;
+			@include breakpoint(xxlarge) {
+				padding: 0 4%;
+			}
+			h2 {
+				background-image: url(../images/line-teal.svg);
+				font-size: 2.2rem;
+				line-height: 1.4;
+			}
+		}
+	}
+
+}

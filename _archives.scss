@@ -1,0 +1,107 @@
+body.woocommerce-account,
+body.post-type-archive-mindful_monday,
+body.single-mindful_monday,
+body.blog,
+body.category,
+body.search-results {
+    background: #f7f7f7;
+}
+
+body.post-type-archive-team_member {
+    h3 {
+        font-family: Poppins,sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        color: $dark-gray;
+        margin: .25rem 0;
+        a {
+            color: $dark-gray;
+        }
+    }
+    .grid-item {
+        h3 {
+            min-height: 80px;
+        }
+    }
+}
+
+body.blog,
+body.category {
+    background: #f7f7f7;
+    .page-navigation {
+        text-align: center;
+        display: none;
+    }
+    ul.pagination li:before {
+        content: '';
+        display: none;
+    }
+    .grid-item {
+        .post {
+            background: #FFF;
+            margin-bottom: 2rem;
+        }
+        a {
+            display: block;
+        }
+        h3 {
+            margin-top: 0;
+        }
+        .text {
+            position: relative;
+            background: #fff;
+            padding: 2rem;
+        }
+        .excerpt-read-more {
+            color: $lfy-teal;
+            display: inline;
+        }
+        p.byline {
+            font-size: .9rem;
+            font-style: italic;
+        }
+    }
+}
+
+.articles-grid {
+    .grid-item .text {
+        position: relative;
+        background: #fff;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.bar.articles {
+    text-align: center;
+    .button {
+        display: inline-block;
+    }
+    .articles-grid {
+        text-align: left;
+    }
+}
+
+
+body.post-type-archive-mindful_monday,
+body.single-mindful_monday {
+    .content {
+        padding-top: 2rem;
+    }
+    h2.mindful-title {
+        text-align: center;
+    }
+    .button-group {
+        text-align: center;
+        margin-bottom: 2rem;
+        a {
+            margin-right: 10px;
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+            color: $lfy-green;
+            background: $white;
+            border: 1px solid $lfy-green;
+        }
+    }
+}

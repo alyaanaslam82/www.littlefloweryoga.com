@@ -1,0 +1,888 @@
+.bar {
+	padding: 2rem 0;
+	// position: relative;
+	// z-index: 0;
+	@include breakpoint(medium) {
+		padding: 4rem 0;
+	}
+	border-top: 1px solid #f7f7f7;
+	.row {
+		position: relative;
+	}
+	&.white {
+		background: $white;
+	}
+	&.gray {
+		background: #f7f7f7;
+	}
+	&.no-padding {
+		padding: 0;
+	}
+	.header {
+		margin: 0 0 2rem 0;
+	}
+	h2 {
+		font-family: 'Playfair Display', serif;
+		font-size: 1.8rem;
+		max-width: 900px;
+		margin: .5rem auto 2rem;
+		padding-bottom: 1.75rem;
+		background: url(../images/line-green.svg) no-repeat 0 100%;
+		background-size: 130px auto;
+		@include breakpoint(medium) {
+			font-size: 3rem;
+		}
+		&.text-center {
+			background-position: 50% 100%;
+		}
+	}
+	h4 {
+		margin: 0;
+	}
+	p {
+		line-height: 1.8;
+	}
+	.more.icon {
+		position: absolute;
+		top: 50%;
+		right: -80px;
+		display: block;
+		svg {
+			width: 60px;
+			height: 60px;
+			fill: $lfy-green;
+		}
+	}
+	.intro {
+		max-width: 850px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.button {
+	.outline {
+		background: transparent; 
+		border: 1px solid $lfy-blue;
+	}
+}
+
+.grid-item {
+	.text {
+		position: relative;
+		background: $white;
+		padding: 2rem;
+	}
+	a {
+		color: $medium-gray;
+	}
+	.circle-icon {
+		background: $lfy-orange;
+		position: absolute;
+		width: 70px; 
+		height: 70px;
+		border-radius: 50%;
+		top: -35px;
+		left: 20px;
+	}
+	
+	h3 {
+		text-transform: uppercase;
+		color: $medium-gray;
+		font-weight: bold;
+		font-size: 1rem;
+		margin: 2rem 0 1rem;
+	}
+	.button.outline {
+		border-color: $lfy-teal;
+		color: $lfy-teal;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+.bar.photo-text {
+	.row {
+		@include breakpoint(medium) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		h2 {
+			background-image: url(../images/line-pink.svg);
+			font-size: 1.8rem;
+			@include breakpoint(xlarge) {
+				font-size: 3rem;
+			}
+		}
+		.header {
+			margin: 2rem 0;
+		}
+		.text-side {
+			padding: 2rem;
+			@include breakpoint(large) {
+				padding: 0 2rem;
+			}
+		}
+		blockquote {
+			padding: 0;
+			font-family: 'Playfair Display', serif;
+			border: 0;
+		}
+	}
+	&.photo-left .text-side {
+		padding-right: 1rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		@include breakpoint(medium) {
+			padding-right: 2rem;
+		}
+		@include breakpoint(xlarge) {
+			padding-right: 6rem;
+		}
+		@include breakpoint(xxlarge) {
+			padding-right: 8rem;
+		}
+	}
+	&.photo-right .text-side {
+		padding-left: 1rem;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		@include breakpoint(medium) {
+			padding-left: 2rem;
+		}
+		@include breakpoint(xlarge) {
+			padding-left: 6rem;
+		}
+		@include breakpoint(xxlarge) {
+			padding-left: 8rem;
+		}
+	}
+}
+
+.bar.upcoming-event {
+	text-align: left;
+	h2 {
+		background-image: url(../images/line-teal.svg);
+		a {
+			color: $dark-gray;
+		}
+	}
+	.icon {
+		vertical-align: middle;
+	}
+	.date,
+	.location {
+		width: 50%;
+		float: left;
+		font-size: 1rem;
+		color: $black;
+		text-transform: uppercase;
+		letter-spacing: .25rem;
+		line-height: 1;
+		margin-bottom: 2rem;
+	}
+	.date svg {
+		fill: $lfy-green;
+	}
+	.location svg {
+		fill: $lfy-pink;
+	}
+	.more {
+		position: absolute;
+		right: -80px;
+		top: 50%;
+		width: 80px;
+		height: 80px;
+		.icon {
+			fill: $lfy-teal;
+			width: 100%;
+			height: auto;
+		}
+		span {
+			display: block;
+			color: $lfy-teal;
+			font-family: 'Handlee', script;
+			font-size: 1.4rem;
+			line-height: 1.1;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.bar.our-programs {
+	h2 {
+		background-image: url(../images/line-orange.svg);
+	}
+	.text {
+		position: relative;
+	}
+	.intro-text {
+		margin-bottom: 2rem;
+		border-left: 1px solid $lightest-gray;
+		@include breakpoint(medium) {
+			padding-left: 110px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	span.icon {
+		display: block;
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: -35px;
+		left: 2rem;
+		background: $lfy-teal;
+		padding: .75rem;
+		border-radius: 50%;
+		svg {
+			fill: $white;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.heart span.icon {
+		background: $lfy-teal;
+	}
+	.online-learning span.icon {
+		background: $lfy-green;
+	}
+	.syp span.icon {
+		background: $lfy-orange;
+	}
+}
+
+.bar.online-learning-products {
+	.grid-item {
+		text-align: left;
+		margin-bottom: 1rem;
+		.inner:hover {
+			box-shadow: 0 0 10px rgba(0, 0, 0, .10);
+		}
+		.product {
+			border: 1px solid #eee;
+			border-bottom: 1px solid #ddd;
+		}
+		.image {
+			position: relative;
+			overflow: hidden;
+		}
+		.corner-ribbon{
+			width: 200px;
+			background: $lfy-green;
+			position: absolute;
+			text-align: center;
+			line-height: 30px;
+			letter-spacing: 1px;
+			color: #fff;
+			text-transform: uppercase;
+			transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			top: 15px;
+			left: -65px;
+		}
+		h3 {
+			margin-top: 0;
+			padding-bottom: 0; 
+			text-transform: uppercase; 
+			font-size: 1rem; 
+			letter-spacing: .15rem; 
+			font-weight: 700; 
+			margin: 1rem 0;
+		}
+		.product--description {
+			padding: 1rem 2rem; 
+			min-height: 380px;
+		}
+		.teacher {
+			font-size: .85rem;
+		}
+		.excerpt {
+			font-size: .85rem; 
+			line-height: 1.4 !important;
+			p {
+				line-height: 1.4;
+			}
+		}
+		.meta {
+			padding: 0 2rem 1rem;
+			.label {
+				background: transparent; 
+				color: #989797; 
+				vertical-align: text-top; 
+				padding: 0;
+			}
+		}
+		.icon-icons_time {
+			fill:#7bc460;
+		}
+		.icon-icons_price {
+			fill:#67c6b6;
+		}
+		.time.columns {
+			border-right: 1px solid #ddd;
+		}
+		.cost.columns {
+			padding-left: 1rem;
+		}
+		.buttons {
+			padding: 0 .75rem; 
+			border-top: 1px solid #ddd; 
+			display: flex; 
+			justify-content: space-between;
+		}
+		.button {
+			font-size: .8rem;
+			width: auto; 
+			margin: 1rem 0; 
+			padding: .5rem .75rem; 
+			letter-spacing: .2rem; 
+		}
+		.button.outline.green {
+			border: 1px solid #7bc460;
+			color: #7bc460;
+		}
+	}
+}
+
+.bar.webinars,
+.bar.upcoming-events-carousel {
+	text-align: center;
+	.grid-item:hover .event-wrap {
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+	}
+	.inner {
+		padding-left: .9375rem;
+		padding-right: .9375rem;
+		white-space: normal;
+	}
+	.event-wrap {
+		background: $white;
+		position: relative;
+		padding-bottom: 140px;
+	}
+	h3.title {
+		font-family: bold;
+		text-transform: uppercase;
+		color: #4b4c52;
+		font-size: 1rem;
+	}
+	h2 {
+		background-image: url(../images/line-orange.svg);
+		background-position: 50% 100%;
+	}
+	.text {
+		position: relative;
+		text-align: left;
+		padding: 1.5rem 1.5rem;
+		font-size: .9rem;
+	}
+	.banner-label {
+		position: absolute;
+		top: -50px;
+		left: -20px;
+		display: block;
+		width: 90%;
+		height: 80px;
+		background: url(../images/banner-live-webinar.svg) no-repeat;
+		background-size: 100% auto;
+		color: #FFF;
+		text-transform: uppercase;
+		padding: 15px 0 15px 18%;
+		letter-spacing: .2rem;
+		font-size: .85rem;
+		@include breakpoint(medium) {
+			width: 100%;
+			top: -24%;
+		}
+		@include breakpoint(xlarge) {
+			width: 90%;
+			top: -50px;
+		}
+	}
+	.banner-live-online-course .banner-label {
+		background: url(../images/banner-live-online-course.svg) no-repeat;
+	}
+    .banner-teacher-certification .banner-label {
+        background-image: url(../images/banner-teacher-certification.svg);
+    }
+    .banner-conferences .banner-label {
+        background-image: url(../images/banner-conferences.svg);
+    }
+    .banner-one-day-ce-workshop .banner-label {
+        background-image: url(../images/banner-certification-courses.svg);
+    }
+    .banner-live-online-course .banner-label {
+        background-image: url(../images/banner-live-online-course.svg);
+    }
+    .banner-special-event .banner-label {
+        background-image: url(../images/banner-special-event.svg);
+    }
+
+	.meta {
+		background: $white;
+		border-top: 1px solid $light-gray;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		text-align: left;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	.time,
+	.date,
+	.where,
+	.when {
+		padding: 0 1rem;
+		width: 49%;
+		display: inline-block;
+		text-transform: uppercase;
+		color: $medium-gray;
+		font-size: .8rem;
+		.icon {
+			display: block;
+			float: left;
+			margin-right: .5rem;
+		}
+		.label {
+			background: transparent;
+			font-weight: 700;
+			padding: 0;
+			color: $medium-gray;
+			display: block;
+			letter-spacing: .05rem;
+		}
+	}
+	.where {
+		svg {
+			fill: $lfy-pink;
+		}
+	}
+	.when {
+		border-left: 1px solid $medium-gray;
+		min-height: 100px;
+	}
+	.time {
+		border-right: 1px solid $medium-gray;
+		svg {
+			fill: $lfy-orange;
+		}
+	}
+	.date,
+	.when {
+		svg {
+			fill: $lfy-green;
+		}
+	}
+	.cycle-slideshow {
+		width: 100%;
+	}
+}
+.bar.upcoming-events-carousel {
+	.banner-label {
+		padding: 18px 0 0 60px;
+	}
+}
+
+.bar.video {
+	text-align: center;
+}
+
+.bar.enews-signup {
+	position: relative;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	.row {
+		position: static;
+		@include breakpoint(xxlarge) {
+			position: relative;
+		}
+	}
+	.heart {
+		display: block;
+		width: 100px;
+		left: -100px;
+		height: 100px;
+		position: absolute;
+		top: 0;
+		background: url(../images/heart.png) no-repeat 0 0;
+		background-size: contain;
+		@include breakpoint(small only) {
+			left: 0;
+			top: -110px;
+		}
+	}
+	.girl {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: -50px;
+		width: 240px;
+		height: 592px;
+		background: url(../images/mindful-mondays-girl.png) no-repeat 0 0;
+		background-size: contain;
+		@include breakpoint(small only) {
+			display: none;
+		}
+		@include breakpoint(xxlarge) {
+			right: -160px;
+			top: -220px;
+		}
+	}
+	.row {
+		@include breakpoint(large) {
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+		}
+	}
+	h2 {
+		margin-bottom: 1rem;
+		background: transparent;
+		padding-bottom: 0;
+	}
+	p {
+		text-transform: uppercase;
+		margin: 0;
+	}
+	@include breakpoint(large) {
+		.enews {
+			border-right: 1px solid $lightest-gray;
+		}
+	}
+	.full-program {
+		padding-right: 100px;
+		@include breakpoint(large) {
+			padding-right: 130px;
+			padding-left: 2rem;
+		}
+		@include breakpoint(xlarge) {
+			padding-left: 3rem;
+			padding-right: 0;
+		}
+		.button {
+			margin-bottom: 3px;
+		}
+	}
+	.enews .button {
+		margin-bottom: 0;
+	}
+	form {
+		padding-left: 50px;
+		max-width: 550px;
+		.enews-sign-up {
+			border-left: solid 1px $lightest-gray;
+			width: 100%;
+		}
+	}
+	.edit-link {
+		display: none;
+	}
+}
+
+.bar.products {
+	text-align: center;
+	h2 {
+		background-image: url(../images/line-green.svg);
+		background-position: 50% 100%;
+	}
+	@include breakpoint(medium down) {
+		.button {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			margin: .5rem 0;
+		}
+	}
+	.button.outline {
+		border-color: $lfy-teal;
+		color: $lfy-teal;
+		&.active,
+		&:hover {
+			background: $lfy-teal;
+			color: $white;
+		}
+	}
+}
+
+.bar.testimonials,
+.bar.testimonial {
+	.row {
+		position: relative;
+	}
+	.slide {
+		width: 100%;
+	}
+	.row .row {
+		@include breakpoint(medium) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+	.white-bg {
+		background: $white;
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+		@include breakpoint(medium) {
+			padding: 1.5rem;
+		}
+	}
+	span.icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		svg {
+			width: 36px;
+			height: 36px;
+			fill: $lfy-green;
+		}
+	}
+	.just-text {
+		padding-top: 3rem;
+		.source {
+			text-align: center;
+		}
+	}
+	.text-side {
+		padding-top: 1rem;
+		span.icon {
+			position: absolute;
+			top: 0;
+			right: 2rem;
+		}
+		.source {
+			max-width: 320px;
+		}
+	}
+	p.source {
+		text-transform: uppercase;
+		letter-spacing: .25rem;
+		font-size: .9rem;
+		margin-top: 2rem;
+	}
+}
+
+.bar.testimonials {
+	text-align: left;
+	// .row {
+	// 	overflow-x: hidden;
+	// }
+	h3 {
+		font-family: 'Handlee';
+		padding-right: 40px;
+		margin-bottom: 3rem;
+		background: url(../images/line-green.svg) no-repeat 0 100%;
+		background-size: 130px auto;
+		padding-bottom: 1.25rem;
+		@include breakpoint(medium) {
+			padding-bottom: 1.75rem;
+		}
+	}
+	.white-bg {
+		position: relative;
+		top: -100px;
+		@include breakpoint(medium) {
+			img {
+				margin-bottom: -45px;
+			}
+		}
+	}
+	.more {
+		display: block;
+		width: 60px;
+		height: 60px;
+	}
+	.cycle-prev span.icon,
+	.cycle-next span.icon,
+	.more span.icon svg {
+		width: 60px;
+		height: 60px;
+		cursor: pointer;
+	}
+	.cycle-prev,
+	.cycle-next {
+		position: absolute;
+		top: 50%;
+		left: -100px;
+		right: auto;
+	}
+	.cycle-next {
+		left: auto;
+		right: -100px;
+	}
+	.cycle-prev {
+		svg {
+			-moz-transform: scaleX(-1);
+			-o-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+			filter: FlipH;
+			-ms-filter: "FlipH";
+		}
+	}
+}
+
+.bar.testimonial {
+	text-align: center;
+	.white-bg {
+		background: $white;
+		padding: 2rem 2.5rem;
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+	}
+	.quote {
+		font-family: 'Playfair Display', serif;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.text-side {
+		text-align: left;
+		.source {
+			border-top: 1px solid #ddd;
+		}
+	}
+}
+
+
+.bar.meet-team-home,
+.bar.meet-team-grid {
+	.team-grid {
+		.inner {
+			position: relative;
+			margin-bottom: 1.5rem;
+		}
+		img {
+			width: 100%;
+		}
+		h4 {
+			position: absolute;
+			text-align: left;
+			letter-spacing: .02rem;
+			padding: .45rem;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.3);
+			color: $white;
+			letter-spacing: 0;
+			font-weight: bold;
+			text-transform: none;
+			a {
+				color: $white;
+			}
+		}
+	}
+}
+.bar.meet-team-home {
+	text-align: left;
+	h2 {
+		background-image: url(../images/line-pink.svg);
+		background-position: 0 100%;
+	}
+	.wp-post-image {
+		border: 1px solid $light-gray;
+	}
+}
+
+.bar.meet-team-grid {
+	text-align: center;
+	h2 {
+		background-position: 50% 100%;
+		font-family: Playfair Display,serif;
+	}
+	h3 {
+		text-align: left;
+		font-family: Playfair Display,serif;
+	}
+	.team-grid h4 {
+		font-size: 1.1rem;
+	}
+}
+
+.bar.tabbed-block .tabs-content {
+	position: relative;
+    z-index: 1;
+}
+
+.bar.generic-text-block {
+	h4,
+	h2 {
+		text-align: center;
+	}
+	h2 {
+		background-position: 50% 100%;
+	}
+	.bg-image {
+		position: absolute;
+	}
+}
+
+.bar.faq {
+	.view-more {
+		display: block;
+		margin-top: 2rem;
+		color: $lfy-teal;
+		text-transform: uppercase;
+		letter-spacing: .25rem;
+	}
+}
+
+
+.bar.webinar-product-carousel {
+	h2 {
+		max-width: 100%;
+		font-size: 2.2rem;
+		background-image: url(../images/line-orange.svg);
+	}
+	.slick-slide {
+		padding: .75rem;
+		.product {
+		// 	box-shadow: 0 0 3px 3px rgba(0,0,0,.05);
+			border: 1px solid #ddd;
+			border-radius: 4px;
+		}
+	}
+}
+
+.bar.tabs {
+
+	.tabs-content {
+		max-width: 1000px;
+		margin: 0 auto;
+		h3 {
+			padding-bottom: 1.75rem;
+			background: url(../images/line-pink.svg) no-repeat 0 100%;
+			background-size: 130px auto;
+		}
+	}
+}
+
+.bar.bar-content-carousel {
+	.inner {
+		padding: .975rem;
+	}
+}
+
+.training-workshops {
+	.meta-column {
+		font-size: .8rem;
+		text-transform: uppercase;
+		padding: 0; 
+		vertical-align: top;
+        @include breakpoint(medium) {
+            min-height: 72px;
+        }
+		div {
+			overflow: hidden;
+		}
+		.icon {
+			fill: $lfy-teal;
+			display: block;
+			float: left;
+			margin-right: 1rem;
+		}
+	}
+}

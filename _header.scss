@@ -1,0 +1,398 @@
+.admin-bar .header.sticky.is-stuck.is-at-top {
+	top: 32px !important;	
+}
+.cart-link a {
+	position: absolute;
+	right: 0;
+	top: 90px;
+	z-index: 2;
+	background: $lfy-teal;
+	display: block;
+	color: white;
+	height: 40x;
+	line-height: 40px;
+	width: 110px;
+	box-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+	text-transform: uppercase;
+	font-family: Poppins,sans-serif;
+	transition: all 0.3s ease-in;
+	padding-left: 5px;
+	&:before {
+		content: "";
+		top: 0;
+		position:absolute;
+		display:block;
+		border: 1.25rem solid $lfy-teal;
+		box-shadow:0px 1px 0px rgba(0,0,0,0.4);
+		z-index:-2;
+		left: -2.25rem;
+		border-right-width: 1rem;
+		border-left-color: transparent;
+		transition: all 0.3s ease-in;
+	}
+	&:hover {
+		background: lighten( $lfy-teal, 15%);
+		&:before {
+			border-color: lighten( $lfy-teal, 15%);
+			border-left-color: transparent;
+		}
+	}
+}
+
+.arrow_box,
+.header-wrap {
+	z-index: 200;
+}
+header.is-at-bottom {
+	top: 0 !important;
+}
+header.header {
+	position: relative;
+	background: $white;
+	min-height: 65px;
+	z-index: 1;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+	@include breakpoint(medium down) {
+		min-height: 54px;
+	}
+	.top-bar {
+		padding: 0;
+	}
+	.row {
+		max-width: 1800px;
+	}
+	#top-bar-menu {
+		transition:transform 0.3s ease-out; // note that we're transitioning transform, not height!
+		height:auto;
+		.logo-column {
+			position: absolute;
+			top: 4px;
+			left: 10px;
+			z-index: 2;
+			width: 18%;
+			width: 8%;
+			@include breakpoint(small only) {
+				width: 18%;
+			}
+			@include breakpoint(xlarge) {
+				width: 18%;
+			}
+			@include breakpoint(medium down) {
+				top: 2px;
+			}
+			a {
+				display: block;
+			}
+			img {
+				width: 60px;
+				height: 60px;
+				@include breakpoint(medium down) {
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+		.top-bar-right {
+			width: 90%;
+			@include breakpoint(xlarge) {
+				width: 85%;
+			}
+			> ul.menu {
+				width: 100%;
+				justify-content: center;
+				@include breakpoint(large) {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+			}
+		}
+		ul.menu {
+			position: static;
+			list-style: none;
+			li {
+				font-family: Poppins, sans-serif;
+				text-transform: uppercase;
+				color: $white;
+				flex: 1 1 auto;
+				position: static;
+				text-align: right;
+				&.menu-item-455,
+				&.menu-item-2293 {
+					flex-grow: 0;
+				}
+				&:hover a {
+					color: $lfy-green;
+				}
+				a {
+					color: #989797;
+					position: static;
+					padding: 1.75rem 1rem 1.75rem 0;
+					background: url(../images/icon-arrow.svg) no-repeat 100% 50%;
+					background-size: 12px auto;
+					@include breakpoint(large) {
+						font-size: .82rem;
+					}
+					@include breakpoint(xlarge) {
+						padding: 1.75rem 1.2rem 1.75rem 0;
+						margin-right: 1rem;
+						font-size: .95rem;
+					}
+					@include breakpoint(xxlarge) {
+						font-size: 1rem;
+					}
+				}
+				@include breakpoint(large) {
+					&.menu-item-39,
+					&.menu-item-41,
+					&.menu-item-367  {
+						flex-grow: 1;
+					}
+				}
+				@include breakpoint(xlarge) {
+					&.menu-item-39,
+					&.menu-item-41,
+					&.menu-item-367 {
+						max-width: 100%;
+					}
+				}
+				// my account
+				&.menu-item-455 a,
+				&.menu-item-2293 a {
+					border: 1px solid $lfy-teal;
+					border-radius: 4px;
+					padding: .95rem 1.5rem .95rem 1.5rem;
+					color: $lfy-teal;
+					margin-top: .75rem;
+					background: none;
+				}
+				ul {
+					width: 100%;
+					left: 0;
+					right: 0;
+					top: 70px;
+					position: absolute;
+					background: $white;
+					padding: 2rem 8rem;
+					a {
+						color: $black;
+					}
+				}
+			}
+			.active>a {
+				background-color: transparent;
+				color: $lfy-green;
+			}
+		}
+		li.menu-item-455 a,
+		li.menu-item-2293 a {
+			max-width: 180px;
+		}
+	}
+}
+// custom override, more learning is a child of certification
+.page-id-548 header.header #top-bar-menu ul.menu a#menu-item-42 {
+	color: #989797;
+}
+
+
+@include breakpoint(large) {
+	// if has header photo
+	body.has-header-photo {
+		.header-wrap {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+		header.header {
+			background: transparent;
+			z-index: 1;
+			box-shadow: none;
+			#top-bar-menu ul li a {
+				color: $white;
+			}
+			#top-bar-menu ul li.menu-item-455 a,
+			#top-bar-menu ul li.menu-item-2293 a {
+				border: 1px solid $white;
+				color: $white;
+			}
+			#top-bar-menu {
+				transform:scaleY(1); // implicit, but good to specify explicitly
+				transform-origin:top;
+				.logo-column {
+					-webkit-transition: all .2s ease-in-out;
+					img {
+						width: 162px;
+						height: 162px;
+						max-width: none;
+					}
+				}
+				&:hover {
+					background: $white;
+					.logo-column {
+						transform-origin: top left;
+						-webkit-transform: scale(.4);
+						// img {
+						// 	width: 60px;
+						// 	height: auto;
+						// }
+					} 
+					ul.menu li {
+						&.menu-item-455 a,
+						&.menu-item-2293 a {
+							border: 1px solid $lfy-teal;
+							color: $lfy-teal;
+						}
+						a {
+							color: $dark-gray;
+						}
+						a:hover {
+							color: $lfy-green;
+						}
+					}
+				}
+			}
+		}
+		header.header.is-stuck {
+			background: $white;
+			border-bottom: 1px solid $dark-gray;
+			.logo-column {
+				transform-origin: top left;
+				-webkit-transform: scale(.4);
+			}
+			#top-bar-menu ul li {
+				a {
+					color: #666;
+				}
+				a:hover {
+					color: $lfy-green;
+				}
+				&.active>a {
+					color: $lfy-green;
+				}
+				// my account
+				&.menu-item-455 a,
+				&.menu-item-2293 a {
+					border: 1px solid $lfy-teal;
+					color: $lfy-teal;
+				}
+			}
+		}
+	}
+}
+
+.header-photo {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 0;
+	.text-overlay {
+		z-index: 2;
+		text-align: center;
+		width: 100%;
+		background: #4b4c52;
+		@include breakpoint(medium) {
+			position: absolute;
+			top: 40%;
+			background: transparent;
+		}
+		@include breakpoint(large) {
+			top: 45%;
+		}
+		h1 {
+			color: $white;
+			letter-spacing: .3rem;
+			margin-bottom: 1.5rem;
+			@include breakpoint(small only) {
+				margin-top: .5rem;
+				font-size: 1.4rem;
+			}
+			@include breakpoint(medium only) {
+				font-size: 2rem;
+			}
+			span {
+				position: relative;
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -20px;
+					left: 0;
+					width: 100%;
+					height: 20px;
+					background-image: url(../images/line-orange.svg);
+					background-repeat: no-repeat;
+					background-size: 100% auto;
+				}
+			}
+		}
+		@include breakpoint(small only) {
+			.button {
+				margin: .5rem 0;
+			}
+		}
+		.text,
+		p {
+			color: $white;
+		}
+	}
+}
+
+header.header #top-bar-menu #mobile-menu {
+	background: $white;
+	width: 100%;
+	float: none;
+	>.menu {
+		margin-top: 6px;
+		padding-right: 6px;
+		text-align: right;
+		display: block;
+	}
+	>.menu>li {
+		flex: none;
+		&>a {
+			border: 1px solid $dark-gray;
+			border-radius: 4px;
+			padding: .75rem;
+			color: $dark-gray;
+			background: transparent;
+		}
+		&:first-child a {
+			border: 1px solid $lfy-teal;
+			color: $lfy-teal;
+		}
+	}
+}
+
+.off-canvas #menu-main-menu {
+	a {
+		text-transform: uppercase;
+		color: $dark-gray;
+		font-size: .9rem;
+		&:hover {
+			color: $lfy-green;
+		}
+	}
+	.is-accordion-submenu-parent:not(.has-submenu-toggle)>a:after {
+		background: url(../images/icon-arrow.svg) no-repeat 100% 50%;
+		background-size: 12px auto;
+		border: 0;
+		width: 12px;
+		height: 12px;
+		top: .7rem;
+		margin-top: 0;
+	}
+	.active>a {
+		background: transparent;
+		color: $dark-gray;
+	}
+	.current-menu-item a {
+		color: $lfy-green;
+	}
+	ul {
+		padding-left: 10px;
+	}
+	.current-menu-parent ul {
+		display: block !important;
+	}
+}

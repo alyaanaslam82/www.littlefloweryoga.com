@@ -1,0 +1,263 @@
+.content {
+	padding: 4rem 0 2rem 0;
+	h2.section {
+		color: #b9b9ba;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: .5rem;
+	}
+	h2 {
+		margin-bottom: 2rem;
+	}
+	h3 {
+		color: $dark-gray;
+	}
+	blockquote {
+		position: relative;
+		font-family: Handlee;
+		padding-right: 40px;
+		background: url(../images/line-green.svg) no-repeat 2rem 100%;
+		background-size: 130px auto;
+		font-size: 1.6rem;
+		border-left: 0;
+		margin: 2rem auto 3rem;
+		max-width: 900px;
+		padding: 1rem 3rem 1rem 2.5rem;
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 36px;
+			height: 36px;
+			right: 0;
+			top: 0;
+			background: url(../images/icon-quote.svg) no-repeat 0 100%;
+			background-size: contain;
+		}
+	}
+	ul.big-list {
+		font-size: 1.4rem;
+		color: $dark-gray;
+		font-family: Playfair Display,serif;
+		li:before {
+			font-size: 24px;
+			vertical-align: top;
+		}
+	}
+	.favorite-quote {
+		margin: 2rem 0 3rem;
+		font-style: italic;
+		font-family: Playfair Display,serif;
+		p {
+			font-size: 1.2rem;
+		}
+		.inner {
+			border-top: 1px solid #b9b9ba;
+			border-bottom: 1px solid #b9b9ba;
+			padding: 1.5rem 1.5rem 1rem;
+		}
+	}
+	.testimonial {
+		position: relative;
+		background: #fff;
+		padding: 2rem 1.5rem;
+		box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+	}
+
+	.mindful-mondays-menu {
+		a {
+			letter-spacing: 0;
+			@extend %button;
+			display: block;
+			max-width: 90%;
+			text-align: left;
+			padding: .75rem 1rem;
+			margin: 0 0 .5rem;
+		}
+	}
+	.mindful-media-box {
+		margin: 1rem 0;
+		h4 {
+			color: #4b4c52;
+		}
+		.columns .inner {
+			background:$white;
+			padding: 1rem;
+			margin-right: 1rem;
+		}
+	}
+	.mindful-resources .column {
+		margin-top: 2rem;
+		.inner {
+			min-height: 550px;
+		}
+	}
+}
+
+.single-team_member {
+	.content {
+		@include breakpoint(medium) {
+			padding: 4rem 8rem 2rem;
+		}
+	}
+}
+
+.single-post {
+	@include breakpoint(medium) {
+		.inner-content header img {
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.individual-course {
+	.main {
+		text-align: center;
+	}
+	.download-manual {
+		width: 90%;
+	}
+	.responsive-embed {
+		border: 1px solid $black;
+	}
+	.woocommerce.columns-3 ul.products li.product {
+		width: 100%;
+		float: none;
+		list-style: none;
+		margin: 1rem 0;
+		border: 0;
+		&:before {
+			display: none;
+		}
+	}
+	.please-purchase {
+		border-top: 1px solid $light-gray;
+		margin: 2rem 0;
+		padding: 1rem 0;
+		h1 {
+			font-family: Handlee;
+			background-position: 0 100%;
+			font-size: 2rem;
+		}
+	}
+	.tabs-content {
+		.audio-box {
+			text-align: left;
+			.icon {
+				margin-right: .4rem;
+			}
+		}
+		.download-box {
+			margin: 0 auto 1rem;
+			position: relative;
+			.inner {
+				text-align: left;
+			}
+			a {
+				display: block;
+				border: 1px solid $lightest-gray;
+				position: relative;
+			}
+			img {
+				width: 12%;
+				margin-right: 0;
+				padding: .8rem 0 .8rem .8rem;
+				vertical-align: middle;
+				display: inline-block;
+			}
+			p {
+				width: 70%;
+				border-right: 1px solid $lightest-gray;
+				padding: 1.4rem .8rem;
+				line-height: 1.2;
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0;
+				text-align :left;
+			}
+			.icon-wrapper {
+				position: absolute;
+				right: 0;
+				width: 17%;
+				top: 50%;
+				margin-top: -15px;
+				height: auto;
+				border-left: 0;
+				text-align: center;
+				.icon {
+					display: inline;
+				}
+				svg {
+					fill: $lfy-green;
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+.bar.bonus-content {
+	h3 {
+		text-align: center;
+		margin: 0 0 1.5rem;
+	}
+	.bonus-content .inner {
+		background: $white;
+		box-shadow: 0 0 5px 5px rgba(0,0,0,.05);
+		border: 1px solid #ccc;
+		padding: 1rem 1.5rem 1.5rem;
+	}
+	.video.bonus-content .inner {
+		padding: 1rem 0 0;
+	}
+	.download-box.bonus-content .inner {
+		padding: 0;
+	}
+	.audio-box .icon {
+		margin-right: .4rem;
+	}
+	.download-box {
+		margin-bottom: 0;
+		a {
+			display: block;
+			border: 1px solid $lightest-gray;
+			position: relative;
+		}
+		img {
+			width: 12%;
+			margin-right: 0;
+			padding: .8rem 0 .8rem .8rem;
+			vertical-align: middle;
+			display: inline-block;
+		}
+		p {
+			width: 70%;
+			border-right: 1px solid $lightest-gray;
+			padding: 1.4rem .8rem;
+			line-height: 1.2;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+		}
+		.icon-wrapper {
+			position: absolute;
+			right: 0;
+			width: 17%;
+			top: 50%;
+			margin-top: -15px;
+			height: auto;
+			border-left: 0;
+			text-align: center;
+			.icon {
+				display: inline;
+			}
+			svg {
+				fill: $lfy-green;
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

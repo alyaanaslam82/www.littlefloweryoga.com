@@ -1,0 +1,325 @@
+
+.mega-menu-div {
+	display: none;
+	position: absolute;
+	border-top: 1px solid $lightest-gray;
+	box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.1);
+	top: 72px;
+	background: $white;
+	text-align: left;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	font-family: Playfair Display,serif;
+	-webkit-transition: max-height 1s; 
+	-moz-transition: max-height 1s; 
+	-ms-transition: max-height 1s; 
+	-o-transition: max-height 1s; 
+	transition: max-height 1s;
+	&.active {
+		height: auto;
+	}
+	&> .row {
+		max-width: 1700px !important;
+		margin: 0 auto;
+		position: relative;
+		padding: 2rem 0 2rem;
+	}
+	&> .row.top {
+		min-height: 350px;
+	}
+	.medium-9 {
+		float: right;
+	}
+	.info {
+		width: 30%;
+		position: absolute;
+		right: 0;
+	}
+	h2 {
+		text-transform: none;
+		padding-bottom: 1.75rem;
+		margin-bottom: 1.5rem;
+		background: url(../images/line-green.svg) no-repeat 0 100%;
+		background-size: 130px auto;
+		letter-spacing: .15rem;
+		font-size: 1.8rem;
+		@include breakpoint(xxlarge) {
+			font-size: 2.2rem;
+		}
+		&.lfy-green {
+			color: $lfy-green;
+		}
+		&.lfy-teal {
+			color: $lfy-teal;
+		}
+		&.lfy-pink {
+			color: $lfy-pink;
+		}
+		&.lfy-orange {
+			color: $lfy-orange;
+		}
+	}
+	.submenu {
+		width: 45%;
+		border-right: 1px solid $lightest-gray;
+		.image {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 22%;
+			display: none;
+		}
+		.info {
+			width: 38%;
+			padding-right: 1.5rem;
+			position: absolute;
+			top: 120px;
+			right: 0;
+			display: none;
+			font-family: Roboto,Arial,sans-serif;
+			font-size: .9rem;
+			p {
+				color: $dark-gray;
+				text-transform: none;
+
+			}
+		}
+		&.active .image,
+		&.active .info {
+			display: block;
+		}
+	}
+	.row.top {
+		overflow: hidden;
+	}
+	.row.bottom {
+		background: $white;
+		border-top: 1px solid $lightest-gray;
+		padding: 1rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		a {
+			font-size: 1.4rem;
+			padding: 1.5rem 0;
+			flex-grow: 1;
+			border-right: 1px solid $lightest-gray;
+			text-align: center;
+			&:last-child {
+				border-right: 0;
+			}
+		}
+	}
+	.subcontent {
+		padding-bottom: 3rem;
+	}
+	.subcontent a {
+		display: block;
+		padding: .25rem 0;
+		color: $black;
+		line-height: 1.4;
+		font-size: 1.25rem;
+	}
+	.icon {
+		padding-right: 5px;
+		vertical-align: middle;
+	}
+	.subject-icon {
+		display: inline-block;
+		float: none;
+	}
+	a.lfy-pink {
+		color: $lfy-pink !important;
+	}
+	a.lfy-green {
+		color: $lfy-green !important;
+	}
+	a.lfy-orange {
+		color: $lfy-orange !important;
+	}
+	a.lfy-teal {
+		color: $lfy-teal !important;
+	}
+	.row.bottom.upcoming-events {
+		.medium-3 {
+			padding-right: 1rem;
+		}
+		a {
+			border-right: 0;
+		}
+	}
+	.event-location-list {
+		display: flex;
+		flex-wrap: wrap;
+		border-left: 1px solid $lightest-gray;
+		padding-left: 1.5rem;
+		.event {
+			width: 20%;
+			display: inline-block;
+			font-size: .9rem;
+		}
+	}
+	.syp-row {
+
+	}
+}
+
+header.header #top-bar-menu ul.menu li .mega-menu-div a {
+	font-family: Playfair Display,serif;
+	text-transform: none;
+	padding: .5rem 0;
+	line-height: 1.4;
+	color: $black;
+	background: none;
+	font-size: 1.2rem;
+	@include breakpoint(xxlarge) {
+		font-size: 1.4rem;
+	}
+	&:hover {
+		color: $lfy-teal;
+	}
+}
+header.header #top-bar-menu ul.menu li .mega-menu-div .row.bottom a {
+	font-size: 1.4rem;
+	@include breakpoint(xxlarge) {
+		font-size: 1.8rem;
+	}
+	
+}
+header.header #top-bar-menu ul.menu li .mega-menu-div .row.bottom .event-location-list a,
+header.header #top-bar-menu ul.menu li .mega-menu-div .row.bottom .event-location-list p {
+	font-family: Roboto,Arial,sans-serif;
+	font-size: .9rem;
+	border-right: 0;
+	text-align: left;
+	// padding: .4rem 0;
+	display:inline;
+}
+header.header #top-bar-menu ul.menu li .mega-menu-div .row.bottom .event-location-list p {
+	color: #666;
+	text-transform: none;
+}
+header.header #top-bar-menu ul.menu li .mega-menu-div .row.bottom .event-location-list a {
+	padding: 0;
+	margin-right: 0;
+}
+header.header #top-bar-menu ul.menu li .mega-menu-div .row.bottom a.mega-bottom-header {
+	text-align: left;
+}
+
+
+header.header #top-bar-menu  {
+	// WHY MINDFULNESS
+	#megamenu-item-39 {
+		.submenu:last-child a {
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	// TRAINING
+	#megamenu-item-42 {
+		h2 {
+			background-image: url(../images/line-pink.svg);
+		}
+	}
+	// SYP
+	#megamenu-item-41 {
+		h2 {
+			background-image: url(../images/line-orange.svg);
+		}
+		.submenu:last-child a {
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	// CONTACT US
+	#megamenu-item-367 {
+		.medium-3 {
+			overflow: hidden;
+		}
+		img {
+			position: absolute;
+			max-width: 340px;
+		}
+		.medium-9 {
+			position: relative;
+			z-index: 2;
+		}
+		h2.title {
+			background-image: url(../images/line-teal.svg);
+		}
+		.row.top {
+			min-height: 0;
+			padding-bottom: 0;
+		}
+		.contact-row {
+			.medium-4 {
+				border-right: 1px solid $lightest-gray;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+			}
+			h2 {
+				padding-bottom: 0;
+				background: transparent;
+				font-size: 2.1rem;
+				letter-spacing: 0;
+			}
+		}
+		.yikes-mailchimp-container {
+			padding-left: 12%;
+			font-family: Roboto,Arial,sans-serif;
+			label.EMAIL-label {
+				border-left: 0;
+			}
+			::placeholder {
+				color: #4a4b51;
+				text-transform: uppercase;
+			}
+			.yikes-easy-mc-form .yikes-easy-mc-submit-button {
+				font-family: Roboto,Arial,sans-serif;
+			}
+		}
+		.email .icon,
+		.phone .icon {
+			line-height: .9;
+			width: 30px;
+			height: 30px;
+		}
+		.email svg {
+			fill: $lfy-pink;
+		}
+		.phone svg {
+			fill: $lfy-orange;
+		}
+		.facebook .icon,
+		.twitter .icon,
+		.instagram .icon {
+			border-radius: 50%;
+			margin-right: 10px;
+			padding: 5px;
+			width: 30px;
+			height: 30px;
+			line-height: .9;
+		}
+		.facebook .icon {
+			background: $facebook;
+			svg {
+				fill: $white;
+			}
+		}
+		.twitter .icon {
+			background: $twitter;
+			svg {
+				fill: $white;
+			}
+		}
+		.instagram .icon {
+			background: $instagram;
+			svg {
+				fill: $white;
+			}
+		}
+	}
+}

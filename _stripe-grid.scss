@@ -1,0 +1,155 @@
+
+.bar.grid {
+	.grid-wrapper {
+		// background: $white;
+		// box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+		.intro {
+			max-width: 800px;
+			text-align: center;
+		}
+		.row {
+			background: $white;
+			margin-left: 0;
+			margin-right: 0;
+			// display: flex;
+			// flex-wrap: wrap;
+			.column {
+				padding: 1rem;
+				border-left: 0;
+				margin: 0 -1px;
+				@include breakpoint(medium) {
+					padding: 2rem;
+					border: 1px solid #ebebeb;
+					&:first-child {
+						border-left: 0;
+					}
+				}
+				&:last-child {
+					border-right: 0;
+				}
+			}
+		}
+		h3 {
+			font-size: 1.6rem;
+			color: $dark-gray;
+		}
+		h2, h3 {
+			&.orange {
+				padding-bottom: 1.75rem;
+				background: url(../images/line-orange.svg) no-repeat 0 100%;
+				background-size: 100px auto;
+			}
+			&.green {
+				padding-bottom: 1.75rem;
+				background: url(../images/line-green.svg) no-repeat 0 100%;
+				background-size: 100px auto;
+			}
+			&.pink {
+				padding-bottom: 1.75rem;
+				background: url(../images/line-pink.svg) no-repeat 0 100%;
+				background-size: 100px auto;
+			}
+			&.teal {
+				padding-bottom: 1.75rem;
+				background: url(../images/line-teal.svg) no-repeat 0 100%;
+				background-size: 100px auto;
+			}
+		}
+		h2.noline {
+			font-size: 1.6rem;
+			background: none;
+			margin-bottom: .5rem;
+			padding-bottom: 0;
+		}
+		.medium-up-4 h3 {
+			font-size: 1rem;
+			a {
+				color: $dark-gray;
+			}
+		}
+		.column-block {
+			margin: 0;
+		}
+		.medium-up-2 .column {
+			padding: 1rem;
+			@include breakpoint(medium) {
+				padding: 4rem;
+			}
+		}
+		p,
+		ul li,
+		ol li {
+			font-size: .9rem;
+		}
+		h2 {
+			font-size: 2rem;
+			background: transparent;
+			padding-bottom: 0;
+		}
+		.text-wrap {
+			overflow: hidden;
+		}
+	} 
+}
+
+.bar.grid .grid-wrapper .row.no-border {
+	background: none;
+	.column-block {
+		padding: .25rem 1rem;
+		border: 0;
+	}
+}
+
+.bar.grid .grid-wrapper .row.no-background {
+	background: none;
+	&.line .column-block {
+		border-color: #d7e1e0;
+		&:first-child {
+			border-left: 0;
+		}
+	}
+}
+
+.bar.grid .grid-wrapper .row.line {
+	.column-block {
+		border-top: 0;
+		border-bottom: 0;
+		&:last-child {
+			border-right: 0;
+		}
+	}
+	margin-bottom: 2rem;
+}
+
+.bar.grid .grid-wrapper .row.card {
+	border: 0;
+	// display: block;
+	background: transparent;
+	&.shadow .column-block .inner {
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+		margin: .5rem;
+		border: 0;
+		height: 92%;
+	}
+	.column-block {
+		padding: 0;
+		border: 0;
+	}
+	.column-block .inner {
+		background: $white;
+		border: 1px solid #ddd;
+		padding: 1.5rem;
+		margin: 1rem;
+	}
+}
+
+
+.page-id-34 .column-block h4,
+.the-syp-page .column-block h4 {
+	font-family: 'Playfair Display', serif;
+	text-transform: none;
+	letter-spacing: 0;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}

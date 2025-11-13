@@ -1,0 +1,492 @@
+#menu-user-dashboard {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	li {
+		display: inline-block;
+		margin-right: 7px;
+		&:before {
+			content: '';
+			display: none;
+		}
+		&.current-menu-item a {
+			background: $lfy-teal;
+			color: $white;
+		}
+		a {
+			text-transform: uppercase;
+			display: inline-block;
+			padding: .75rem 2rem;
+			border-radius: 4px;
+			font-weight: 700;
+			font-size: .9rem;
+			border: 1px solid $lfy-teal;
+			line-height: 1;
+			color: $lfy-teal;
+			background: transparent;
+			letter-spacing: .15rem;
+		}
+	}
+}
+
+#resource-center h2 {
+	background-image: url(../images/line-pink.svg);
+}
+
+#online-courses h2 {
+	background-image: url(../images/line-teal.svg);
+}
+
+.page-template-template-user-dashboard #certification {
+	h2 {
+		background-image: url(../images/line-orange.svg);
+	}
+	.tabs-title {
+		@media all and (max-width: 880px) {
+			flex-basis: 33%;
+		}
+	}
+	.tabs-title a {
+		padding: 1rem;
+		&[aria-selected=true] {
+			background: transparent;
+			color: $lfy-teal;
+		}
+		&:hover {
+			background: transparent;
+			color: $lfy-teal;
+			border-color: $lfy-teal;
+		}
+	}
+	.tabs-title.has-access a {
+		background: $white;
+		pointer-events: auto;
+		cursor: pointer;
+		&:hover {
+			background: $white;
+			color: $lfy-green;
+		}
+		&[aria-selected=true] {
+			background: $lfy-teal;
+			color: #fff;
+		}
+	}
+	.tabs-content {
+		background: $white;
+		margin: 2rem auto;
+		box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+		h3 { 
+			font-family: Playfair Display,serif;
+			border: 0;
+		}
+	}
+	.tabs-panel {
+		padding: 2rem 4rem;
+	}
+	#level1.tabs-panel,
+	#level2.tabs-panel,
+	#level3.tabs-panel {
+		padding: 0;
+		.level-content {
+			padding: 1rem 2rem;
+		}
+		.inactive_sales {
+			padding: 2rem 4rem;
+		}
+	}
+	.level-content {
+		h3 {
+			font-size: 2rem;
+			letter-spacing: .125rem;
+		}
+		h4 {
+			font-size: 1.6rem;
+			letter-spacing: .125rem;
+			font-family: Playfair Display,serif;
+			text-transform: none;
+			text-align: left;
+			color: #4b4c52;
+		}
+		.responsive-embed.widescreen {
+			margin-right: 20px;
+		}
+		&.medium-12 .responsive-embed.widescreen {
+			max-width: 100%;
+		}
+	}
+	.event-column {
+        border-right: 1px solid #ddd;
+	}
+	.meta-column {
+        border-bottom: 1px solid #ddd;
+        font-size: .9rem;
+        text-transform: uppercase;
+		padding: 1.5rem;
+        div {
+            overflow: hidden;
+        }
+        a {
+            color: $lfy-teal;
+        }
+        .icon {
+            fill: $lfy-teal;
+            display: block;
+            float: left;
+            margin-right: 1rem;
+        }
+        label {
+            text-transform: uppercase;
+            font-weight: bold;
+			color: $dark-gray;
+		}
+		&.where {
+			.icon {
+				fill: $lfy-orange;
+			}
+			div {
+				font-size: 1rem;
+				font-weight: bold;
+				letter-spacing: .125rem;
+				text-transform: uppercase;
+				color: $dark-gray;
+			}
+		}
+        &.when .icon {
+            fill: $lfy-pink;
+        }
+        &.venue .icon {
+            fill: $lfy-green;
+        }
+        &.instructor {
+			border-bottom: 0;
+			.icon {
+				fill: $lfy-orange;
+			}
+		}
+	}
+}
+
+.course.column-block {
+	@include breakpoint(420px down) {
+		width: 100%;
+	}
+	&.remaining .inner {
+		background: transparent;
+		.info,
+		img {
+			opacity: .4;
+		}
+		img {
+			filter: gray;
+			filter: grayscale(100%); 
+		}
+		.access {
+			background: #fff;
+		}
+	}
+	.inner {
+		box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+		font-size: .9rem;
+		padding-bottom: 80px;
+		position: relative;
+		background: #fff;
+	}
+	.access {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		border-top: 1px solid $lightest-gray;
+	}
+	.time {
+		margin-bottom: .5rem;
+		.icon {
+			fill: $lfy-green;
+			width: 16px;
+			height: 16px;
+			vertical-align: middle;
+		}
+		span.label {
+			background: transparent;
+			color: $medium-gray;
+			padding: 0 0 0 .25rem;
+		}
+	}
+	.price {
+		padding-top: 1rem;
+		.icon {
+			margin-left: 1rem;
+			margin-right: .25rem;
+			float: left;
+			width: 16px;
+			height: 16px;
+			fill: $lfy-pink;
+		}
+		div {
+			overflow: hidden;
+		}
+	}
+	.buy {
+		border-left: 1px solid $lightest-gray;
+		padding-left: 1rem;
+	}
+	.button {
+		color: $lfy-teal;
+		border-color: $lfy-teal;
+		font-size: .8rem;
+		padding: 1rem .75rem;
+		letter-spacing: 0;
+		margin: 1rem 0;
+	}
+	.explore .button {
+		width: 90%;
+		display: block;
+		margin: 1rem auto;
+	}
+	.info {
+		padding: 1rem;
+		a {
+			color: $dark-gray;
+		}
+	}
+}
+
+
+.course_legacy-template-page-teacher-member,
+.page-template-template-user-dashboard {
+	.button-group {
+		text-align: center;
+		a {
+			margin-right: 10px;
+			letter-spacing: 0;
+		}
+	}
+	.download-box {
+		margin-bottom: 1rem;
+		a {
+			display: block;
+			color: $black;
+			border: 1px solid $lightest-gray;
+			padding: 1rem;
+		}
+		img {
+			margin-right: 10px;
+		}
+		img, p {
+			display: inline-block;
+		}
+		p {
+			max-width: 60%;
+		}
+		.icon {
+			float: right;
+			padding: 1.8rem;
+			margin-top: -1rem;
+			width: auto;
+			height: auto;
+			border-left: 1px solid $lightest-gray;
+			svg {
+				fill: $lfy-green;
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+	.pesi-video {
+		.inner {
+			border: 1px solid $lightest-gray;
+		}
+		.play-image {
+			display: block;
+			position: relative;
+			.icon {
+				position: absolute;
+				top: 1rem;
+				right: 1.5rem;
+				display: block;
+				width: 50px;
+				height: 50px;
+				z-index: 2;
+				svg {
+					fill: #fff;
+					display: block;
+					width: 60px;
+					height: 60px;
+				}
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.description {
+			padding: 1.5rem;
+		}
+		.text {
+			margin-top: .5rem;
+			a {
+				color: $black;
+				font-size: .9rem;
+				font-weight: bold;
+			}
+		}
+		.duration {
+			color: #b9b9ba;
+			font-size: .9rem;
+			vertical-align: middle;
+		}
+		.icon {
+			width: 20px;
+			height: 20px;
+			vertical-align: middle;
+			margin-right: 4px;
+			svg {
+				fill: $lfy-green;
+			}
+		}
+	}
+	h3 {
+		font-family: 'Playfair Display', serif;
+		font-size: 1.6rem;
+		border-bottom: 1px solid $lightest-gray;
+		color: $dark-gray;
+	}
+	.previous {
+		margin-top: 4rem;
+	}
+	.support-box {
+		.inner {
+			border: 1px solid $lightest-gray;
+		}
+		.datetime {
+			border-bottom: 1px solid $lightest-gray;
+			border-top: 1px solid $lightest-gray;
+		}
+		.icon {
+			vertical-align: middle;
+			margin-right: 8px;
+			float: left;
+			svg {
+				fill: $lfy-pink;
+			}
+		}
+		.date, 
+		.time {
+			width: 49%;
+			padding: 1rem;
+			display: inline-block;
+			.icon {
+				width: 18px;
+				height: 18px;
+				svg {
+					fill: $lfy-green;
+				}
+			}
+		}
+		.date {
+			border-right: 1px solid $lightest-gray;
+			.icon svg {
+				fill: $lfy-orange;
+			}
+		}
+		a.join {
+			margin: 1rem;
+			color: $lfy-green;
+		}
+		a, 
+		span.upcoming-text {
+			display: block;
+			padding: 1rem;
+			color: $dark-gray;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		span.title {
+			overflow: hidden;
+			display: block;
+		}
+	}
+	.standards-of-excellence {
+		text-align: center;
+		h2 {
+			background-image: url(../images/line-pink.svg);
+		}
+		.standard {
+			background: url(../images/icon-checkmark-teal.svg) no-repeat 30px 0;
+			background-size: 20px 20px;
+			padding-left: 1.6rem;
+			text-align: left;
+			strong {
+				color: #000;
+			}
+		}
+		.columns {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+		.button {
+			margin: 3rem 0;
+		}
+	}
+
+	.course-curriculum {
+		h2 {
+			background-image: url(../images/line-teal.svg);
+			margin-bottom: 3rem;
+		}
+		.image {
+			text-align: right;
+			img {
+				border-right: 1px solid $lightest-gray;
+				padding-right: 50px;
+				margin-right: 50px;
+			}
+		}
+	}
+	#personal-practices {
+		h2 {
+			background-image: url(../images/line-orange.svg);
+		}
+	}
+	#branding-resources {
+		h2 {
+			background-image: url(../images/line-teal.svg);
+		}
+	}
+	#support-calls {
+		h2 {
+			background-image: url(../images/line-orange.svg);
+		}
+	}
+}
+
+.audio-box {
+	margin-bottom: 1rem;
+	.inner {
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+		border: 0;
+		padding: 1rem 1.5rem 1.5rem;
+	}
+	p {
+		margin: 0;
+		font-weight: bold;
+		color: $dark-gray;
+	}
+	.duration {
+		color: $light-gray;
+		font-size: .9rem;
+		vertical-align: middle;
+	}
+	.icon {
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		svg {
+			fill: $lfy-green;
+		}
+	}
+	audio {
+		margin-top: 1rem;
+	}
+}

@@ -1,0 +1,17 @@
+.home {
+	.photo-text.photo-left .text-side {
+		position: relative;
+
+		.subject-icon {
+			position: absolute;
+			top: -4rem;
+			right: 4rem;
+			@include breakpoint(large down) {
+				top: 0;
+			}
+			@include breakpoint(medium down) {
+				display: none;
+			}
+		}
+	}
+}

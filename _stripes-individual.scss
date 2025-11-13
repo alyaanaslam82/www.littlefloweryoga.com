@@ -1,0 +1,422 @@
+.page-template-page-levels {
+	.bar.testimonial {
+		margin-top: 150px;
+		box-shadow: none;
+		padding: 6rem 0;
+		.white-bg {
+			margin-top: -150px;
+		}
+	}
+	.bar.training-workshops {
+		h2 {
+			background-image: url(../images/line-pink.svg);
+		}
+	}
+	h3.bonus-header-style {
+		font-size: 1.4rem;
+		font-weight: normal;
+		padding-bottom: 1.75rem;
+		background: url(../images/line-pink.svg) no-repeat 0 100%;
+		background-size: 130px auto;
+		color: $dark-gray;
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+		overflow: hidden;
+	}
+	#div-prerequisites h2 {
+		background-image: url(../images/line-teal.svg);
+	}
+	.content {
+		padding-bottom: 0;
+	}
+}
+
+.page-id-447 .generic-text-block {
+	padding-bottom: 2rem;
+}
+#div-who-we-are {
+	padding-top: 0;
+	border-top: 0;
+	.column-block {
+		padding: 0 2rem;
+	}
+	.grid-wrapper p {
+		font-size: 1rem;
+	}
+}
+
+// why-mindfulness
+#div-why .row.card {
+	@include breakpoint(medium) {
+		.column:first-child {
+			width: 40%;
+		}
+		.column:last-child {
+			width: 60%;
+		}
+	}
+}
+// why-mindfulness
+#div-our-mission.generic-text-block {
+	padding: 8rem 0;
+	h2,
+	h4 {
+		text-align: left;
+		background-position: 0 100%;
+	}
+	.text-side {
+		max-width: 1100px;
+		text-align: left;
+		position: relative;
+		margin: 0 auto;
+		float: none;
+		padding: 3rem 2rem 3rem 30%;
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+		img {
+			position: absolute;
+			left: 7%;
+			top: -20%;
+			max-width: 25%;
+			width: 230px;
+		}
+		p {
+			font-family: 'Playfair Display', serif;
+			color: $black;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+
+// why-mindfulness
+// about team
+#div-why-cards {
+	.column-block {
+		h4 {
+			border-bottom: 1px solid $lightest-gray;
+			font-family: 'Playfair Display', serif;
+			text-transform: none;
+			letter-spacing: 0;
+			font-size: 1.4rem;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			clear: both;
+			margin-bottom: 1.5rem;
+		}
+		.num {
+			text-align: right;
+			font-weight: 500;
+			font-size: 1.4rem;
+		}
+		h4,
+		.num {
+			color: $lfy-green;
+		}
+		svg {
+			fill: $lfy-green;
+		}
+		.inner {
+			padding-bottom: 5rem;
+		}
+		&:nth-child(2) {
+			h4,
+			.num,
+			svg {
+				color: $lfy-pink;
+				fill: $lfy-pink;
+			}
+		}
+		&:nth-child(3) {
+			h4,
+			.num,
+			svg {
+				color: $lfy-teal;
+				fill: $lfy-teal;
+			}
+		}
+		&:nth-child(4) {
+			h4,
+			.num,
+			svg {
+				color: $lfy-orange;
+				fill: $lfy-orange;
+			}
+		}
+		&:nth-child(5) {
+			h4,
+			.num,
+			svg {
+				color: #7eafd1;
+				fill: #7eafd1;
+			}
+		}
+	}
+}
+
+// why-mindfulness
+#div-social-emotional-learning {
+	h2 {
+		max-width: 800px;
+	}
+}
+
+// why-mindfulness
+#div-resilience-look-like {
+	.grid-wrapper {
+		background: url(../images/resilience-bg.jpg) no-repeat center 20%;
+		background-size: 110% auto;
+	}
+	.block {
+		position: relative;
+		margin-bottom: 1.5rem;
+		h4 {
+			position: absolute;
+			text-align: left;
+			letter-spacing: .02rem;
+			padding: .45rem;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0,0,0,.3);
+			color: #fff;
+			letter-spacing: 0;
+			font-weight: 700;
+			text-transform: none;
+		}
+	}
+}
+
+// why-mindfulness
+#div-resilience-look-like,
+#div-mindfulness-mean-to-me {
+	h2.text-center {
+		text-align: left;
+		background-position: 0 100%;
+		font-size: 2.6rem;
+		max-width: none;
+	}
+}
+
+// why-mindfulness
+#div-mindfulness-mean-to-me h2 {
+	background-image: url(../images/line-pink.svg);
+}
+
+// why-mindfulness
+#div-graduates {
+	margin-top: -150px;
+	padding: 200px 0 4rem;
+	h2 {
+		background-image: url(../images/line-pink.svg);
+	}
+	.grid-wrapper h2.noline {
+		background: none;
+	}
+}
+
+// why-mindfulness
+#div-research-yoga {
+	h2 {
+		background-image: url(../images/line-orange.svg);
+	}
+	.row {
+		max-width: 900px;
+	}
+	.column-block {
+		text-align: center;
+		@include breakpoint(small only) {
+			border-left: 1px solid #ebebeb;
+		}
+		@include breakpoint(medium) {
+			&:nth-child(1),
+			&:nth-child(2) {
+				border-top: 0;
+				border-bottom: 0;
+			}
+			&:nth-child(odd) {
+				border-left: 0;
+			}
+			&:nth-child(even) {
+				border-right: 0;
+			}
+			&:nth-child(3),
+			&:nth-child(4) {
+				border-bottom: 0;
+			}
+		}
+		.subject-icon {
+			display: block;
+			margin: 0 auto .5rem;
+			float: none;
+		}
+		h4 {
+			font-family: 'Playfair Display', serif;
+			text-transform: none;
+			letter-spacing: 0;
+			font-size: 1.2rem;
+			font-weight: 500;
+			margin-bottom: 1rem;
+			color: $black;
+		}
+	}
+}
+
+// why-mindfulness
+#div-more-research { 
+	text-align: left;
+	padding: 0;
+	.row {
+		position: relative;
+		padding: 5.5rem 0;
+		@include breakpoint(medium) {
+			background: url(../images/bg-why-mindfulness-more-research.jpg) no-repeat 100% 50%;
+			background-size: 32% auto;
+		}
+	}
+	h2 {
+		font-family: 'Handlee';
+		text-align: left;
+		background-position: 0 100%;
+		font-size: 2.6rem;
+		background-image: url(../images/line-pink.svg);
+	}
+	@include breakpoint(medium) {
+		.text-side {
+			max-width: 60%;
+		}
+	}
+}
+
+// why-mindfulness
+#div-research-blocks {
+	> .row {
+		padding-bottom: 180px;
+		background: url(../images/bg-why-mindfulness-research-blocks.jpg) no-repeat 75% 100%;
+		background-size: 280px auto;
+	}
+	h2 {
+		background-image: url(../images/line-orange.svg);
+	}
+	.intro {
+		max-width: 860px;
+		margin: 0 auto;
+		p {
+			line-height: 1.6;
+		}
+	}
+	.grid-wrapper {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.grid-wrapper .row {
+		display: grid;
+		grid-gap: 25px;
+		/* Space between items */
+		@include breakpoint(medium) {
+			grid-template-columns: 1fr 1fr;
+		}
+		&:before {
+			content: '';
+			display: none;
+		}
+		.column-block {
+			width: 100%;
+			float: none;
+			padding: .5rem;
+		}
+	}
+	.column-block {
+		.inner {
+			margin: 0;
+		}
+		p {
+			font-family: 'Playfair Display', serif;
+			color: $black;
+			font-size: 1rem;
+		}
+		.subject-icon {
+			float: right;
+			margin-right: 0;
+			margin-left: 2rem;
+		}
+	}
+}
+
+#div-social-emotional-learning {
+	position: static;
+}
+
+#div-resilience {
+	margin-top: -260px;
+	padding-top: 13rem;
+}
+
+#div-join-fb-group .text-side {
+	background: #f7f7f7;
+	border: 1px solid #c8cbcb;
+	padding: 2rem;
+}
+
+#div-family-engagement ul.checkmark,
+#div-staff-wellness ul.checkmark {
+	@include breakpoint(medium) {
+		width: 60%;
+	}
+}
+
+// about our team
+#div-our-reach .grid-wrapper {
+	.column-block:nth-child(1),
+	.column-block:nth-child(2) {
+		border-top: 0;
+	}
+	.row:nth-child(2) .column-block {
+		border-bottom: 0;
+	}
+}
+
+// about our team
+#div-about-our-mission {
+	@include breakpoint(large) {
+		background: #f7f7f7 url(../images/girl-chair.png) no-repeat 100% 50%;
+		background-size: contain;
+	}
+}
+
+
+// for families page > find a teacher
+#div-find-teacher {
+	h2 {
+		background: transparent;
+		margin: 0;
+	}
+	a.button {
+		font-size: 1.4rem;
+	}
+}
+
+.page-id-143 .bar.webinar-product-carousel h2 {
+	text-align: center;
+	background-size: 130px auto;
+	@include breakpoint(medium) {
+		font-size: 3rem;
+	}
+}
+
+#div-certification-track .button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .button {
+		padding: .5rem 1.75rem;
+		margin-right: .5rem;
+		border: 1px solid #26b6a1;
+		font-size: .875rem;
+		letter-spacing: 0;
+		color: #67c6b6;
+		&:hover {
+			background: #67c6b6;
+			color: #FFF;
+		}
+	}
+}

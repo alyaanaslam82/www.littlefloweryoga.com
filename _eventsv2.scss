@@ -1,0 +1,229 @@
+.tribe-events-pro-photo .tribe-common-g-row {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}	
+.tribe-events-pro .tribe-events-pro-photo__event {
+	width: 100% !important;
+	display: flex;
+  @include breakpoint(medium) {
+		width: 50% !important;
+  }
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+	padding-top: 40px;
+}
+
+.tribe-events-pro-photo .tribe-events-pro-photo__event {
+
+	// live webinar is default banner
+  &.tribe_events_cat-teacher-certification .photo-wrap .label {
+      background-image: url(../images/banner-teacher-certification.svg);
+  }
+  &.tribe_events_cat-conferences .photo-wrap .label {
+      background-image: url(../images/banner-conferences.svg);
+  }
+  &.tribe_events_cat-one-day-ce-workshop .photo-wrap .label {
+      background-image: url(../images/banner-certification-courses.svg);
+  }
+  &.tribe_events_cat-live-online-course .photo-wrap .label {
+      background-image: url(../images/banner-live-online-course.svg);
+  }
+  &.tribe_events_cat-special-event .photo-wrap .label {
+      background-image: url(../images/banner-special-event.svg);
+  }
+
+  // primary categories get banner- class so should be preferred label
+  &.banner-teacher-certification .photo-wrap .label {
+      background-image: url(../images/banner-teacher-certification.svg);
+  }
+  &.banner-conferences .photo-wrap .label {
+      background-image: url(../images/banner-conferences.svg);
+  }
+  &.banner-one-day-ce-workshop .photo-wrap .label {
+      background-image: url(../images/banner-certification-courses.svg);
+  }
+  &.banner-live-online-course .photo-wrap .label {
+      background-image: url(../images/banner-live-online-course.svg);
+  }
+  &.banner-special-event .photo-wrap .label {
+      background-image: url(../images/banner-special-event.svg);
+  }
+  .photo-wrap {
+  	position: relative;
+  }
+  .tribe-events-pro-photo__event-title {
+  	text-transform: uppercase;
+	font-size: 1rem;
+    letter-spacing: .15rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    a {
+	    color: $dark-gray;
+		  border: 0;
+	    &:hover, &:active {
+		    text-decoration: none;
+		    border: 0;
+	    }
+    }
+  }
+  .label {
+      position: absolute;
+      bottom: -30px;
+      left: -20px;
+      display: block;
+      width: 70%;
+      height: 80px;
+      background: url(../images/banner-live-webinar.svg) no-repeat;
+      background-size: 100% auto;
+      color: #FFF;
+      text-transform: uppercase;
+      padding: 18px 0 0 3.2rem;
+      letter-spacing: .2rem;
+      font-size: .85rem;
+      z-index: 10;
+      @include breakpoint(small down) {
+          width: 80%;
+          bottom: -45px;
+          max-width: 360px;
+      }
+  }
+  .online-course .banner-label {
+    background: url(../images/banner-online-course.svg) no-repeat;
+  }
+  .tribe-events-photo-event-wrap {
+	  display: flex;
+	  flex-direction: column;
+  }
+  .tribe-events-pro-photo__event-details {
+	  padding: 1rem 2rem;
+	  p {
+			font-size: .85rem;
+	    line-height: 1.4;
+	    margin-bottom: 1rem;
+	    a {
+		    color: $medium-gray;
+	    }
+	  }
+  }
+  .tribe-events-event-meta {
+	  display: flex;
+    flex-wrap: wrap;
+  	padding: 1rem 2rem;
+    margin-top: auto;
+  }
+  .meta-column {
+    width: 32%;
+    border-right: 1px solid #ddd;
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding: 0 .75rem .5rem;
+    @include breakpoint(medium) {
+        min-height: 100px;
+    }
+    div {
+        overflow: hidden;
+    }
+    &.where {
+        width: 50%;
+		    @include breakpoint(medium) {
+        	padding-left: 0;
+        	width: 33%;
+		    }
+    }
+    &.when { 
+        width: 50%;
+        border-right: 0;
+		    @include breakpoint(medium) {
+        	width: 40%;
+					border-right: 1px solid #ddd;
+		    }
+    }
+    &.cost {
+        width: 50%;
+		    @include breakpoint(medium) {
+        	width: 27%;
+		    }
+    }
+    &.cost,
+    &:last-child {
+        border-right: 0;
+    }
+    .tribe-event-multiple-days {
+        display: block;
+    }
+	}
+	.buttons {
+      padding: 0;
+      border-top: 1px solid #ddd;
+      width: 100%;
+  }
+  .button {
+      width: 48%;
+      margin-right: 1.1%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: .75rem .5rem;
+      font-size: 1rem;
+      border: 1px solid $lfy-green;
+      background: transparent;
+      color: $lfy-green !important;
+      &.learn-more {
+          color: $lfy-teal;
+          border-color: $lfy-teal;
+      }
+      &:last-child {
+          margin-right: 0;
+      }
+  }
+
+}
+
+.single-tribe_events {
+	.tribe-events-event-meta {
+		padding: 0 4%;
+		&:before {
+			border: 0;
+		}
+	}
+	.tribe-events-single-event-description,
+	.tribe-events-event-meta {
+		color: $medium-gray;
+		p, dt, dd, li {
+			color: $medium-gray;
+			font-size: 1rem;
+		}
+		a {
+			border: 0 !important;
+		}
+	}
+	.tribe-events-venue-map {
+		width: 100%;
+	}
+}
+
+.tribe-events-content, 
+.tribe-events-content h2, 
+.tribe-events-content h3, 
+.tribe-events-content h4, 
+.tribe-events-content h5, 
+.tribe-events-content h6,
+.tribe-events-event-meta,
+.tribe-events-cal-links {
+font-family: Roboto,Arial,sans-serif;
+}
+
+// make sticky events show first
+body.post-type-archive-tribe_events .tribe-events-pro-photo__event.wp-sticky.post-24533 {
+    order: -100;
+}
+
+body.post-type-archive-tribe_events {
+    .header-photo {
+        background-color: #000;
+        img {
+            opacity: .55;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+footer.footer {
+	background: $lfy-blue;
+	color: #a7bbc7;
+	padding: 3rem 0;
+	.columns {
+		@include breakpoint(medium) {
+			border-right: 1px solid #407493;
+			padding-right: 1.5rem;
+			padding-left: 1.5rem;
+		}
+		&.last {
+			border: 0;
+		}
+	}
+	.menu a {
+		padding: .5rem 0;
+	}
+	h4 {
+		color: $white;
+		text-transform: uppercase;
+		letter-spacing: 0;
+		font-weight: bold;
+		font-size: .9rem;
+		margin: 0 0 1rem;
+	}
+	a {
+		color: $white;
+	}
+	.copyright {
+		margin-top: 2rem; 
+		padding: 2rem 0;
+		@include breakpoint(medium) {
+			border-top: 1px solid #407493;
+		}
+		p {
+			font-size: .9rem;
+		}
+		@include breakpoint(medium) {
+			.logo {
+				width: 20%;
+			}
+			.copyright-side {
+				padding-left: 3rem;
+				padding-top: 3rem;
+			}
+		}
+	}
+	.textwidget p {
+		font-size: .9rem;
+		strong {
+			color: $white;
+		}
+	}
+	.footer-social p {
+		font-size: .9rem;
+	}
+	.footer-social-icons {
+		padding: 1.5rem 0 0;
+		a {
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+		.icon {
+			fill: $white;
+		}
+	}
+}
+
+.grecaptcha-badge {
+	visibility: collapse !important;  
+}
+#swnza_banner_id {
+	height: auto !important;
+}
